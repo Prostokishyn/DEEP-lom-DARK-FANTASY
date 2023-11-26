@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject messageResources;
 
+    public AudioSource buyBuilding;
+    public AudioSource placement;
+
     private void Start()
     {
         StartCoroutine(ReplenishEnergyRoutine());
@@ -77,6 +80,8 @@ public class GameManager : MonoBehaviour
         energyText.text = energy.ToString();
         if (Input.GetMouseButtonDown(0) && buildingToPlace != null)
         {
+            placement.Play();
+
             Tile nearestTile = null;
             float nearestDistance = float.MaxValue;
             foreach(Tile tile in tiles)
@@ -90,6 +95,7 @@ public class GameManager : MonoBehaviour
             }
             if (nearestTile.isOccupied == false)
             {
+
                 Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
                 buildingToPlace = null;
                 nearestTile.isOccupied = true;
@@ -114,6 +120,8 @@ public class GameManager : MonoBehaviour
     {
         if (coin >= building.cost && energy>=building.energyCost)
         {
+            buyBuilding.Play();
+
             customCursor.gameObject.SetActive(true);
             customCursor.GetComponent<SpriteRenderer>().sprite = building.GetComponent<SpriteRenderer>().sprite;
             Cursor.visible = false;
