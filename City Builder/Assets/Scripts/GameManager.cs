@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public int energy;
     public TextMeshProUGUI energyText;
 
+    public float energyReplenishInterval = 5.0f;
+    public int energyReplenishAmount = 5;
+
     private Building buildingToPlace;
     public GameObject grid;
 
@@ -20,6 +23,28 @@ public class GameManager : MonoBehaviour
     public Tile[] tiles;
 
     public GameObject messageResources;
+
+    private void Start()
+    {
+        StartCoroutine(ReplenishEnergyRoutine());
+    }
+
+    private IEnumerator ReplenishEnergyRoutine()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(energyReplenishInterval);
+            ReplenishEnergy();
+        }
+    }
+
+    private void ReplenishEnergy()
+    {
+        if (energy < 100)
+        {
+            energy = Mathf.Min(100, energy + energyReplenishAmount);
+        }
+    }
 
     private void Update()
     {
