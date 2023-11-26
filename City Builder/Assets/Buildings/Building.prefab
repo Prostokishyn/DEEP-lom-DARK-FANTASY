@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8943310816159237065}
   - component: {fileID: -8284075136842391350}
   - component: {fileID: 4037388295903179358}
+  - component: {fileID: 8754170283738053524}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -99,3 +100,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 400
   energyCost: 50
+--- !u!114 &8754170283738053524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002794455295479208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3dd061a1ea36f409b9204fd34e16a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  incomeAmount: 50
+  incomeInterval: 60

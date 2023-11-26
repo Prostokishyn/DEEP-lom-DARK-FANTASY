@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     public float energyReplenishInterval = 5.0f;
     public int energyReplenishAmount = 5;
 
+    public float earningBuildingsInterval = 60.0f;
+    public int earningBuildings = 100;
+
     private Building buildingToPlace;
     public GameObject grid;
 
@@ -27,6 +30,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(ReplenishEnergyRoutine());
+
+        StartCoroutine(GenerateBuildingIncome());
     }
 
     private IEnumerator ReplenishEnergyRoutine()
@@ -43,6 +48,26 @@ public class GameManager : MonoBehaviour
         if (energy < 100)
         {
             energy = Mathf.Min(100, energy + energyReplenishAmount);
+        }
+    }
+
+    private IEnumerator GenerateBuildingIncome()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(earningBuildingsInterval);
+            GenerateIncomeFromBuildings();
+        }
+    }
+
+    private void GenerateIncomeFromBuildings()
+    {
+        foreach (Tile tile in tiles)
+        {
+            if (tile.isOccupied)
+            {
+                coin += earningBuildings;
+            }
         }
     }
 
