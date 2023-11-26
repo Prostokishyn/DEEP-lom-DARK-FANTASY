@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     public int coin;
     public TextMeshProUGUI coinText;
 
+    public int energy;
+    public TextMeshProUGUI energyText;
+
     private Building buildingToPlace;
     public GameObject grid;
 
@@ -16,9 +19,12 @@ public class GameManager : MonoBehaviour
 
     public Tile[] tiles;
 
+    public GameObject messageResources;
+
     private void Update()
     {
         coinText.text = coin.ToString();
+        energyText.text = energy.ToString();
         if (Input.GetMouseButtonDown(0) && buildingToPlace != null)
         {
             Tile nearestTile = null;
@@ -45,17 +51,31 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    IEnumerator ShowMessage(float seconds)
+    {
+        messageResources.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(seconds);
+
+        messageResources.gameObject.SetActive(false);
+    }
+
     public void BuyBuilding(Building building)
     {
-        if (coin >= building.cost)
+        if (coin >= building.cost && energy>=building.energyCost)
         {
             customCursor.gameObject.SetActive(true);
             customCursor.GetComponent<SpriteRenderer>().sprite = building.GetComponent<SpriteRenderer>().sprite;
             Cursor.visible = false;
 
             coin -= building.cost;
+            energy -= building.energyCost;
             buildingToPlace = building;
             grid.SetActive(true);
+        }
+        else
+        {
+            StartCoroutine(ShowMessage(1f));
         }
     }
 }
