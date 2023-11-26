@@ -29,6 +29,9 @@ public class GameManager : MonoBehaviour
 
     public AudioSource buyBuilding;
     public AudioSource placement;
+    public AudioSource message;
+    public AudioSource energyRecovery;
+    public AudioSource earning;
 
     private void Start()
     {
@@ -51,6 +54,7 @@ public class GameManager : MonoBehaviour
         if (energy < 100)
         {
             energy = Mathf.Min(100, energy + energyReplenishAmount);
+            energyRecovery.Play();
         }
     }
 
@@ -70,6 +74,7 @@ public class GameManager : MonoBehaviour
             if (tile.isOccupied)
             {
                 coin += earningBuildings;
+                earning.Play();
             }
         }
     }
@@ -134,6 +139,7 @@ public class GameManager : MonoBehaviour
         else
         {
             StartCoroutine(ShowMessage(1f));
+            message.Play();
         }
     }
 }
