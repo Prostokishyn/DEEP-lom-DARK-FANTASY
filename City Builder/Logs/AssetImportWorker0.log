@@ -11,13 +11,13 @@ F:\U3D\2022.3.12f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-F:/Диплом/DEEP-lom-DARK-FANTASY/City Builder
+F:/Diplom/DEEP-lom-DARK-FANTASY/City Builder
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55329
-Successfully changed project path to: F:/Диплом/DEEP-lom-DARK-FANTASY/City Builder
-F:/Диплом/DEEP-lom-DARK-FANTASY/City Builder
+50255
+Successfully changed project path to: F:/Diplom/DEEP-lom-DARK-FANTASY/City Builder
+F:/Diplom/DEEP-lom-DARK-FANTASY/City Builder
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,16 +49,16 @@ F:/Диплом/DEEP-lom-DARK-FANTASY/City Builder
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9664] Host "[IP] 192.168.0.100 [Port] 0 [Flags] 2 [Guid] 398091925 [EditorId] 398091925 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OFKKU8A) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [1256] Host "[IP] 192.168.0.100 [Port] 0 [Flags] 2 [Guid] 3443726116 [EditorId] 3443726116 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OFKKU8A) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [9664] Host "[IP] 192.168.0.100 [Port] 0 [Flags] 2 [Guid] 398091925 [EditorId] 398091925 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OFKKU8A) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [1256] Host "[IP] 192.168.0.100 [Port] 0 [Flags] 2 [Guid] 3443726116 [EditorId] 3443726116 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-OFKKU8A) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
-Refreshing native plugins compatible for Editor in 18.34 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 19.07 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.12f1 (4fe6e059c7ef)
 [Subsystems] Discovering subsystems at path F:/U3D/2022.3.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path F:/Диплом/DEEP-lom-DARK-FANTASY/City Builder/Assets
+[Subsystems] Discovering subsystems at path F:/Diplom/DEEP-lom-DARK-FANTASY/City Builder/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -70,47 +70,47 @@ Initialize mono
 Mono path[0] = 'F:/U3D/2022.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'F:/U3D/2022.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'F:/U3D/2022.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56448
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: F:/U3D/2022.3.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: F:/U3D/2022.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010002 seconds.
-- Loaded All Assemblies, in  0.504 seconds
+Registered in 0.009756 seconds.
+- Loaded All Assemblies, in  0.567 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 465 ms
+Android Extension - Scanning For ADB Devices 457 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.015 seconds
-Domain Reload Profiling: 1519ms
-	BeginReloadAssembly (167ms)
+- Finished resetting the current domain, in  0.969 seconds
+Domain Reload Profiling: 1535ms
+	BeginReloadAssembly (204ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (86ms)
-	LoadAllAssembliesAndSetupDomain (190ms)
-		LoadAssemblies (168ms)
+	RebuildCommonClasses (53ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (76ms)
+	LoadAllAssembliesAndSetupDomain (216ms)
+		LoadAssemblies (205ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (186ms)
-			TypeCache.Refresh (184ms)
-				TypeCache.ScanAssembly (168ms)
+		AnalyzeDomain (211ms)
+			TypeCache.Refresh (210ms)
+				TypeCache.ScanAssembly (192ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (1016ms)
+	FinalizeReload (969ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (895ms)
+		SetupLoadedEditorAssemblies (882ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (692ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (664ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (133ms)
-			ProcessInitializeOnLoadMethodAttributes (60ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (142ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,8 +118,8 @@ Domain Reload Profiling: 1519ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.195 seconds
-Refreshing native plugins compatible for Editor in 7.59 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.075 seconds
+Refreshing native plugins compatible for Editor in 7.77 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -127,685 +127,1101 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.452 seconds
-Domain Reload Profiling: 2633ms
-	BeginReloadAssembly (254ms)
+- Finished resetting the current domain, in  1.459 seconds
+Domain Reload Profiling: 2532ms
+	BeginReloadAssembly (279ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
+		DisableScriptedObjects (42ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
+		CreateAndSetChildDomain (26ms)
 	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (77ms)
-	LoadAllAssembliesAndSetupDomain (783ms)
-		LoadAssemblies (573ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (674ms)
+		LoadAssemblies (550ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (363ms)
-			TypeCache.Refresh (320ms)
-				TypeCache.ScanAssembly (297ms)
-			ScanForSourceGeneratedMonoScriptInfo (34ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (1453ms)
+		AnalyzeDomain (272ms)
+			TypeCache.Refresh (235ms)
+				TypeCache.ScanAssembly (213ms)
+			ScanForSourceGeneratedMonoScriptInfo (29ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (1460ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1177ms)
+		SetupLoadedEditorAssemblies (1205ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (252ms)
-			ProcessInitializeOnLoadAttributes (821ms)
-			ProcessInitializeOnLoadMethodAttributes (53ms)
+			BeforeProcessingInitializeOnLoad (176ms)
+			ProcessInitializeOnLoadAttributes (924ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
 			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
-Refreshing native plugins compatible for Editor in 6.63 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 7.32 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4069 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 63 unused Assets / (33.7 KB). Loaded Objects now: 4542.
-Memory consumption went from 153.9 MB to 153.9 MB.
-Total: 4.134600 ms (FindLiveObjects: 0.351400 ms CreateObjectMapping: 0.119000 ms MarkObjects: 3.575600 ms  DeleteObjects: 0.087000 ms)
+Unloading 4070 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 63 unused Assets / (33.7 KB). Loaded Objects now: 4543.
+Memory consumption went from 154.0 MB to 154.0 MB.
+Total: 4.372800 ms (FindLiveObjects: 0.357700 ms CreateObjectMapping: 0.117100 ms MarkObjects: 3.807900 ms  DeleteObjects: 0.088600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 17393.412497 seconds.
-  path: Assets/Scripts/GameManager.cs
-  artifactKey: Guid(aa6c124601d7d21429347f02def349d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/GameManager.cs using Guid(aa6c124601d7d21429347f02def349d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b714a1b0e75783d6ec6a9c4b0c693a41') in 0.005603 seconds
+  Time since last request: 8674.487135 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(5).png
+  artifactKey: Guid(06769c1f861efd74192d704582dfeaa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(5).png using Guid(06769c1f861efd74192d704582dfeaa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e502a05494c7a147a61a1fba28b821b') in 0.103554 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(7).png
+  artifactKey: Guid(fe5f11c6f81a7504dad8aeddfb92fca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(7).png using Guid(fe5f11c6f81a7504dad8aeddfb92fca0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8077d90f04b444ff99a4beb5cd62b90f') in 0.023213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(9).png
+  artifactKey: Guid(9125807540d5b1b4a991cbf586187ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(9).png using Guid(9125807540d5b1b4a991cbf586187ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54484d52c5ff0928b896b0ca6e8bc101') in 0.021260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(1).png
+  artifactKey: Guid(663c207059ed49d4193015c542d789cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(1).png using Guid(663c207059ed49d4193015c542d789cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bb2d86f197904cf9093b9b8aac1c216') in 0.023681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(2).png
+  artifactKey: Guid(ccb592ae8b159594786754c643cbe770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(2).png using Guid(ccb592ae8b159594786754c643cbe770) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98661b4ed6f9e08cf1f5801005ae3c08') in 0.022413 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(4).png
+  artifactKey: Guid(e51992c64f7d567408e369ac0e5f8f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(4).png using Guid(e51992c64f7d567408e369ac0e5f8f91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59922e8536c5edd468d1ac66982aaa2e') in 0.020229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(12).png
+  artifactKey: Guid(336e319a8a156684aa632dc42f071cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(12).png using Guid(336e319a8a156684aa632dc42f071cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a96c8c9ea44d330618c1d1d4af3c647d') in 0.021455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(3).png
+  artifactKey: Guid(49b1b4ff30608b643a32a532798f3f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(3).png using Guid(49b1b4ff30608b643a32a532798f3f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '821819861d2b7b36bd421f7b7dad0b43') in 0.020478 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(13).png
+  artifactKey: Guid(c501e774683d0a4419fd668a48b8045b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(13).png using Guid(c501e774683d0a4419fd668a48b8045b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10664e844144e19b7829171f79f36b13') in 0.020595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(14).png
+  artifactKey: Guid(8ea98f355eae9a3419b52d5eec1628d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(14).png using Guid(8ea98f355eae9a3419b52d5eec1628d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0145abbb4c518f112e0a95cda5928177') in 0.025011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(8).png
+  artifactKey: Guid(70969ba9cf982e14ca25754b5535b8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(8).png using Guid(70969ba9cf982e14ca25754b5535b8b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f9f56c195b73b8cd0527dab68a2cc10') in 0.023123 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites
+  artifactKey: Guid(f3978b3c38fd6544999ebed7e29c6094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites using Guid(f3978b3c38fd6544999ebed7e29c6094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cce7982390484001523d53c7af59516a') in 0.000497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(15).png
+  artifactKey: Guid(5cefac2bc278a4b4d8bdf4de00508fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(15).png using Guid(5cefac2bc278a4b4d8bdf4de00508fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '232742a1c3c1f77f0490c1d5498f9cfd') in 0.020312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(10).png
+  artifactKey: Guid(32743ec885bad0d49ae9209adc6b5e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(10).png using Guid(32743ec885bad0d49ae9209adc6b5e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c2881df37be00c5ec3accd1d154d57a') in 0.021541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(11).png
+  artifactKey: Guid(d3665d740ee80fc49905fb7d0086e7ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(11).png using Guid(d3665d740ee80fc49905fb7d0086e7ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc6b86103df69014ac0e223c54a90034') in 0.049244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter
+  artifactKey: Guid(2514b20d8b8640741b26e93a8894981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter using Guid(2514b20d8b8640741b26e93a8894981d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b317f0da3d1f92dcffa37e392e832962') in 0.000448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads
+  artifactKey: Guid(ca709004b54f1ee45b962b64aba137c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads using Guid(ca709004b54f1ee45b962b64aba137c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7276f26c7e926604c54abea4acb0af3') in 0.000856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(6).png
+  artifactKey: Guid(f4ed6288d2d4c0440baf10a8c7437cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Winter/road_winter(6).png using Guid(f4ed6288d2d4c0440baf10a8c7437cb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f79d13cd0ffe6423d5237c742b30efd4') in 0.021514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.423818 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring
+  artifactKey: Guid(8190a8201b81b4c47bf6b94cd977a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring using Guid(8190a8201b81b4c47bf6b94cd977a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726c070417c3b669428443d54372bb6b') in 0.000835 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.094679 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(1).png
+  artifactKey: Guid(c3168a5b556737f4eb01a646b8588fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(1).png using Guid(c3168a5b556737f4eb01a646b8588fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d666cd8f6fa23c25c89302120442614') in 0.018945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(4).png
+  artifactKey: Guid(0eb2946548fc4954fa17743b2acfd286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(4).png using Guid(0eb2946548fc4954fa17743b2acfd286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd63ed988fdf0fbfacc8926310894adba') in 0.018440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(7).png
+  artifactKey: Guid(28db88ab556d4744c840efa67fa3527f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(7).png using Guid(28db88ab556d4744c840efa67fa3527f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b726ccbf7b09120268ec6c0b2b2eaf') in 0.018183 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(8).png
+  artifactKey: Guid(cc859d50c44e78c43947e42ab7d980ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(8).png using Guid(cc859d50c44e78c43947e42ab7d980ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '701e288f10e43dd2ec07d540b2c8a69a') in 0.018011 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(6).png
+  artifactKey: Guid(69b31a3ab30316546a5b00b5a3dff832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(6).png using Guid(69b31a3ab30316546a5b00b5a3dff832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf958a1674d388ea9f3b005335a634d') in 0.019338 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(11).png
+  artifactKey: Guid(1bce50e2fc3a2434da9d37770866827e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(11).png using Guid(1bce50e2fc3a2434da9d37770866827e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f58d2a66e82c3cc38f2ee99b99b1c117') in 0.018960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(12).png
+  artifactKey: Guid(8d36fa7f5ed5bdd4b96e22199df40c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(12).png using Guid(8d36fa7f5ed5bdd4b96e22199df40c3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4939cef88f94cbbaf2bcc9ca5b3de082') in 0.020753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(15).png
+  artifactKey: Guid(b83c1fe9c559056428f3dbb697e9d503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(15).png using Guid(b83c1fe9c559056428f3dbb697e9d503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5636c9c61eafb1ff2923a4c814bca2') in 0.021173 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(5).png
+  artifactKey: Guid(58494126e559cbe4587dbd5602ced622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(5).png using Guid(58494126e559cbe4587dbd5602ced622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3222a0c96a508b88beaea9e1e239dc') in 0.020631 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(9).png
+  artifactKey: Guid(46341555591f3fa44862bb21f5482f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(9).png using Guid(46341555591f3fa44862bb21f5482f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c783c4714edb3de93c340d468c04cfa7') in 0.021572 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(3).png
+  artifactKey: Guid(483eb024f1e86e7448e7af2193918365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(3).png using Guid(483eb024f1e86e7448e7af2193918365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2def2eddee742e6e9001b1ccaf6849d') in 0.020224 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(13).png
+  artifactKey: Guid(8f4d91eff4626b04e8fbedb74980539c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(13).png using Guid(8f4d91eff4626b04e8fbedb74980539c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7c875e3985f02b2aba8458dc6d68a9') in 0.020751 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(10).png
+  artifactKey: Guid(b6bf7bc336529394b9a8c239d75c5da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(10).png using Guid(b6bf7bc336529394b9a8c239d75c5da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebeee304d337853d7196171c0a2af13d') in 0.021383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(14).png
+  artifactKey: Guid(8b6b6aabdbffa8247a63ecd169970deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(14).png using Guid(8b6b6aabdbffa8247a63ecd169970deb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6936fc10202f4bdb48fb759e7e9f0ac8') in 0.021044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(2).png
+  artifactKey: Guid(d21efc126fa12104f8304b1179a64177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Spring/road(2).png using Guid(d21efc126fa12104f8304b1179a64177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3343cf737a6f22fdb5b597e17a0f2c') in 0.023211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.501760 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert
+  artifactKey: Guid(025b47aa8a61774409b2a7d2620d6c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert using Guid(025b47aa8a61774409b2a7d2620d6c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a960b348ac974f41857a0710fec4dce8') in 0.000525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.087747 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(1).png
+  artifactKey: Guid(52ee82faa8d44144ab272e792ebde92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(1).png using Guid(52ee82faa8d44144ab272e792ebde92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5da6b140abab18a033a0758e992ae58') in 0.018594 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(3).png
+  artifactKey: Guid(b1a674c49f05a5e40b707d5d36c4242b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(3).png using Guid(b1a674c49f05a5e40b707d5d36c4242b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6e6283bf0c647c11c0d248a953f2307') in 0.018024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(5).png
+  artifactKey: Guid(735d53c05a22af3448c86c4819c3d2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(5).png using Guid(735d53c05a22af3448c86c4819c3d2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b713928c26b8978458dba64a24133dd') in 0.018207 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(10).png
+  artifactKey: Guid(94e4383293b9e2440ba7f50dfc4de2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(10).png using Guid(94e4383293b9e2440ba7f50dfc4de2f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1468ec1ba6f98514c365151449b1e574') in 0.018350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(13).png
+  artifactKey: Guid(ae2c1a3178b94614d91d45fa32679b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(13).png using Guid(ae2c1a3178b94614d91d45fa32679b93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ef19b03dfdd9048e5ea4e8bd8180e4') in 0.066006 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(9).png
+  artifactKey: Guid(3b0b1c1d2b1c6bb41a19ccb26c9d8e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(9).png using Guid(3b0b1c1d2b1c6bb41a19ccb26c9d8e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5e57b9a0e4c9546dc90970ede017f7b') in 0.021257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(14).png
+  artifactKey: Guid(fd7a0d5afb2765646921d7687ab5904d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(14).png using Guid(fd7a0d5afb2765646921d7687ab5904d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2cd8e17eb789218b1f0c8d8e71ac367') in 0.023487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(15).png
+  artifactKey: Guid(96e40b0254e13c64e91dbb49e7adcca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(15).png using Guid(96e40b0254e13c64e91dbb49e7adcca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a24abb16b42a459ef1755771774594c4') in 0.024893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(11).png
+  artifactKey: Guid(073965338e0a0c94a81f5e4f4f3d4fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(11).png using Guid(073965338e0a0c94a81f5e4f4f3d4fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2950f660367189e1616b9865832984f5') in 0.026476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(12).png
+  artifactKey: Guid(e341346e75966f44e94856492a438ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(12).png using Guid(e341346e75966f44e94856492a438ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671a6ae67ff40bf231ea6b7fa050dc72') in 0.024784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(2).png
+  artifactKey: Guid(696e5e93c3ec2854f954115fa53896a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(2).png using Guid(696e5e93c3ec2854f954115fa53896a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fd9bdf00dda357840248c61be68d443') in 0.027212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(8).png
+  artifactKey: Guid(f7c351d733e3c6d4890f104837b0213a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(8).png using Guid(f7c351d733e3c6d4890f104837b0213a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a3f0f8286bf3b83d8e74bad51c66810') in 0.024899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(7).png
+  artifactKey: Guid(130029ecb8932d1449fefa9085b30382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(7).png using Guid(130029ecb8932d1449fefa9085b30382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5158029ca7c5d23390b0b7ec43fab013') in 0.022449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(4).png
+  artifactKey: Guid(0a371cfea349398419b81e1f80b55ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(4).png using Guid(0a371cfea349398419b81e1f80b55ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca290643a67ff56dd7f34738bcdaae19') in 0.020623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(6).png
+  artifactKey: Guid(aa2f9d5ed1d28af4798477ae3e54e45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Roads/Desert/road_desert(6).png using Guid(aa2f9d5ed1d28af4798477ae3e54e45b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bb659e8b73d30bddcbf3402cd68e2eb') in 0.022116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.576960 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert
+  artifactKey: Guid(d570e829eb7aae04189e4143933378a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert using Guid(d570e829eb7aae04189e4143933378a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec68f213551e727148236e28901fac3') in 0.000828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.123256 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand.png
+  artifactKey: Guid(9808cca683e70724e8a0bc508c55e5bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand.png using Guid(9808cca683e70724e8a0bc508c55e5bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b078b555cedb6760f3ce8b783f21990') in 0.018253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(2).png
+  artifactKey: Guid(e558cf0b3b0357c46b4dffe1cc483480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(2).png using Guid(e558cf0b3b0357c46b4dffe1cc483480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1bb497fa7903e14d5a9b7accaaa4ec7') in 0.020277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(1).png
+  artifactKey: Guid(a86794d1ed3a3fc4e9c62bce92fa7eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(1).png using Guid(a86794d1ed3a3fc4e9c62bce92fa7eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23f3866906b246575d38b11b430adf21') in 0.020112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(7).png
+  artifactKey: Guid(deef3cc285963c847bf131c74f44e0f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(7).png using Guid(deef3cc285963c847bf131c74f44e0f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c6b30995286d3dbc72cb158eadf0c2b') in 0.022941 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(8).png
+  artifactKey: Guid(3be758e13917c66498b4e10cbd6b1ef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(8).png using Guid(3be758e13917c66498b4e10cbd6b1ef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99e24990b17a27085bb5e9bf287c5a4f') in 0.021097 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(6).png
+  artifactKey: Guid(aff334f909d655045a7b5fb9bea4ae37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(6).png using Guid(aff334f909d655045a7b5fb9bea4ae37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0ea06aeb792a737c84de4a0b0e3d2e') in 0.021035 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(4).png
+  artifactKey: Guid(3ae114c0617b4074e987bdaf661cecba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(4).png using Guid(3ae114c0617b4074e987bdaf661cecba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1507da8b7d3a42b005c4e246c2c443f8') in 0.019936 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(9).png
+  artifactKey: Guid(244bfafd5ccde364496c75dfec15271a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(9).png using Guid(244bfafd5ccde364496c75dfec15271a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865ad7e4b36bd427f8596257513131a0') in 0.021116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(3).png
+  artifactKey: Guid(47499d6902b1853418e89e2ea394b5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(3).png using Guid(47499d6902b1853418e89e2ea394b5c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '529f1ae564f378fa057da0a7ec8b9959') in 0.019416 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(5).png
+  artifactKey: Guid(331d305f61754e94d81152a44dd6a8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/sand_detail(5).png using Guid(331d305f61754e94d81152a44dd6a8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '634c21b358e1e60d640a92229a4774dc') in 0.020969 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 11.000234 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/stones
+  artifactKey: Guid(4ed438c414d283e4bbb2f9e12be52bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/stones using Guid(4ed438c414d283e4bbb2f9e12be52bc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f0e295ec9f06aef1119f17c81a37b1') in 0.000525 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.080320 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/stones/stone_deser(1).png
+  artifactKey: Guid(12f6fbf15355b48438396c149252c853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/stones/stone_deser(1).png using Guid(12f6fbf15355b48438396c149252c853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48c66d86787b79ebf4f3870c6c49036') in 0.019266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/stones/stone_deser(4).png
+  artifactKey: Guid(5eeb9c8759df4be45a49d0a64f891abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/stones/stone_deser(4).png using Guid(5eeb9c8759df4be45a49d0a64f891abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aa3a31e3fe672e5efa4dd86f88a81f8') in 0.021087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/stones/stone_deser(2).png
+  artifactKey: Guid(df7ef674257dee94bb143247e4c94a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/stones/stone_deser(2).png using Guid(df7ef674257dee94bb143247e4c94a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10c5c824b4cef7c6aa9b70fd5892e713') in 0.020404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/stones/stone_deser(3).png
+  artifactKey: Guid(bda65bf75cb51a4458c84c2d5f8f3051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/stones/stone_deser(3).png using Guid(bda65bf75cb51a4458c84c2d5f8f3051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3bbe48ffc0cafd3a2b80e87eb9a8105') in 0.022195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1595.915101 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses
+  artifactKey: Guid(423416202870bb84fb95cd4ed72bc33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses using Guid(423416202870bb84fb95cd4ed72bc33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb0e1a5ddc769d4b2e9ce3d5d450f11b') in 0.000685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.038396 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses/cactus(1).png
+  artifactKey: Guid(1a35724fad464cc4db98023f74d51df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses/cactus(1).png using Guid(1a35724fad464cc4db98023f74d51df8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79e09aeffbc16b5015d6ab015b3b9ff9') in 0.021082 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses/cactus(4).png
+  artifactKey: Guid(36d56a0d0a5842c4fac22ec95f283660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses/cactus(4).png using Guid(36d56a0d0a5842c4fac22ec95f283660) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb346e1e58e12aa60d9a733612d758b') in 0.028022 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses/cactus(5).png
+  artifactKey: Guid(f7506e39ef2829842aac43982184f75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses/cactus(5).png using Guid(f7506e39ef2829842aac43982184f75e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0340c3f8ecd2e76eb1c50e6df838d48') in 0.034008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses/cactus(2).png
+  artifactKey: Guid(a0249ed7f4b759742891bd2948663b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses/cactus(2).png using Guid(a0249ed7f4b759742891bd2948663b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc9aa3728122af3c7f1b6254891985e') in 0.034181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses/cactus(3).png
+  artifactKey: Guid(bb3bcc27b48715c479567ee0b7ff2516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Desert/cactuses/cactus(3).png using Guid(bb3bcc27b48715c479567ee0b7ff2516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f783514278794131409ff842ed0ec5a8') in 0.027371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.450744 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Buildings
+  artifactKey: Guid(e0802f6e771cfb04887a838a9f7156e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Buildings using Guid(e0802f6e771cfb04887a838a9f7156e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077fbbe7e959cbdb5feee6422d7ec8a5') in 0.000529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.076662 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Buildings/smoke.png
+  artifactKey: Guid(b8be5439c10f73a4ea4a2d91b328d0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Buildings/smoke.png using Guid(b8be5439c10f73a4ea4a2d91b328d0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc5266c5d52801faa8e29f98303a8da8') in 0.028420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.050145 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(1).png
+  artifactKey: Guid(5fb24f997931cad44baaae16384cd521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(1).png using Guid(5fb24f997931cad44baaae16384cd521) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f14082d69185214ecde8831caa2a7d3') in 0.021811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(4).png
+  artifactKey: Guid(33f6cd4b845205e47beec87da4e8b983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(4).png using Guid(33f6cd4b845205e47beec87da4e8b983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3f7313e69a30c6b716732026396c9e1') in 0.021229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(7).png
+  artifactKey: Guid(4ce9698b0bf218b4eb7ebef91199caba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(7).png using Guid(4ce9698b0bf218b4eb7ebef91199caba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1672a04256be2aa9c64c5c730e31016a') in 0.021533 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(8).png
+  artifactKey: Guid(585a2f4da41f26b43985162cad28f08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(8).png using Guid(585a2f4da41f26b43985162cad28f08f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414c0a14d98050e12c2042a3df255b7d') in 0.021698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(2).png
+  artifactKey: Guid(4e4c81f517f1af54eb6820029b555845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(2).png using Guid(4e4c81f517f1af54eb6820029b555845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f822282b94c6e34169486fc12c39d85') in 0.021116 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(5).png
+  artifactKey: Guid(09bc53a5f3f62da4c971e5f7b4e19534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(5).png using Guid(09bc53a5f3f62da4c971e5f7b4e19534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f59c8cb196247c9f804f3d7a25975e2e') in 0.020762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(9).png
+  artifactKey: Guid(b03da1414a292ba45a1913ad77fb8f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(9).png using Guid(b03da1414a292ba45a1913ad77fb8f2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b7a12fed98027364c656637387a1f6') in 0.021083 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(6).png
+  artifactKey: Guid(19cfaf6a2dd5fdd439df9f20b6eb800b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(6).png using Guid(19cfaf6a2dd5fdd439df9f20b6eb800b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed1baf0f16d6e2091c65ccc710cfc83') in 0.022612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(10).png
+  artifactKey: Guid(77ed2b902743fba469980c2bacf2f403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(10).png using Guid(77ed2b902743fba469980c2bacf2f403) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc4c4441f4134b2d531629cde7842f74') in 0.021158 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(3).png
+  artifactKey: Guid(0ff06c990fb6c0f4b90c1f11289afa2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Castle walls/castle_wall(3).png using Guid(0ff06c990fb6c0f4b90c1f11289afa2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2182a76b7a6278e5d54c2ed938cdb87') in 0.021288 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 9.495288 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers
+  artifactKey: Guid(1b2d0d3876606a8478d0ab24e4742733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers using Guid(1b2d0d3876606a8478d0ab24e4742733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13847f3cc60210f34af4c715a1947d11') in 0.011496 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.949012 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert
+  artifactKey: Guid(d6493224fbef9fe40b3416a94b8dcc90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert using Guid(d6493224fbef9fe40b3416a94b8dcc90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '026c455b3f16ad230e973848a653719e') in 0.000497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.065010 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(1).png
+  artifactKey: Guid(5a57e93d652b2354681bc49f67aa1d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(1).png using Guid(5a57e93d652b2354681bc49f67aa1d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73607c2dc8b6f370eab4d4103de3ff99') in 0.018909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(4).png
+  artifactKey: Guid(f1de1fcbce065ab4cb2be2ebf54c19c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(4).png using Guid(f1de1fcbce065ab4cb2be2ebf54c19c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e8f2a11c50b2780b01054d02527ce62') in 0.030162 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(5).png
+  artifactKey: Guid(2328a440d0192ca4d9769cc758f997df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(5).png using Guid(2328a440d0192ca4d9769cc758f997df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc07a5934f29e39bc405e4cf71ad749d') in 0.019447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(8).png
+  artifactKey: Guid(ae7731974126bf04486891eec3f2a6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(8).png using Guid(ae7731974126bf04486891eec3f2a6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cff8637c972152e76b1e4e951a13e51') in 0.019301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(11).png
+  artifactKey: Guid(12a95b7265378f0428e82fe25322850d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(11).png using Guid(12a95b7265378f0428e82fe25322850d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b58433f04273423005035c597fa1a3') in 0.019171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(17).png
+  artifactKey: Guid(d17a95f1faa2b7a4cb7fe43f257d33af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(17).png using Guid(d17a95f1faa2b7a4cb7fe43f257d33af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217ded71999d0a07513c873955eeb7eb') in 0.021558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(14).png
+  artifactKey: Guid(3ef95ba1ffb68de4aadc228560faf5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(14).png using Guid(3ef95ba1ffb68de4aadc228560faf5e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb508ba9fe4501be3e02f3be00d39df8') in 0.021519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(3).png
+  artifactKey: Guid(690e492d8467b0b46a2238ffc96bf163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(3).png using Guid(690e492d8467b0b46a2238ffc96bf163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d156ddf1dd1eec4ebaa374bffe7bd0') in 0.021839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(13).png
+  artifactKey: Guid(7081c38e1596db74ca0af67f0e6c0f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(13).png using Guid(7081c38e1596db74ca0af67f0e6c0f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72f0f5aca84e11c88c59cae2425a3dec') in 0.021497 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(15).png
+  artifactKey: Guid(0ba5dbb304af59d4fbccfd349eb21b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(15).png using Guid(0ba5dbb304af59d4fbccfd349eb21b34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ff3ba943f895190ca5509255a9741bc') in 0.022639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(9).png
+  artifactKey: Guid(ddef710ac61c8a84c899a97ccc5f943d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(9).png using Guid(ddef710ac61c8a84c899a97ccc5f943d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b149ca63e5ae802dec45ef5de97f7879') in 0.021820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(7).png
+  artifactKey: Guid(516b01385cad90f4384b0151c03719f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(7).png using Guid(516b01385cad90f4384b0151c03719f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d38906792064c0443b741ead4d9697') in 0.021078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(2).png
+  artifactKey: Guid(b0925bf24eade6948a7cd07ff3783c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(2).png using Guid(b0925bf24eade6948a7cd07ff3783c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88c7e505b911dd8fd189f7b6aa737608') in 0.021886 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(16).png
+  artifactKey: Guid(c5ed81dd08616414dac74af3acd5ca49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(16).png using Guid(c5ed81dd08616414dac74af3acd5ca49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f5d24c06813324609fec73ee9cccf5') in 0.020526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(12).png
+  artifactKey: Guid(fa105bba6037092478e4aee0184da039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(12).png using Guid(fa105bba6037092478e4aee0184da039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4835b7616b67ebc2d07ad426ac8270f5') in 0.020544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(6).png
+  artifactKey: Guid(5b93a1963bac4c24a862c6e85b3045f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(6).png using Guid(5b93a1963bac4c24a862c6e85b3045f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ed749d51af23b64edd60bb091ad17e4') in 0.020867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(10).png
+  artifactKey: Guid(eee3cf8a0b010fa41a673bb8582ef3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Rivers/Desert/river_desert(10).png using Guid(eee3cf8a0b010fa41a673bb8582ef3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6a184e5885227f5285deb22e2ec8cfe') in 0.021015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 11.669474 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Winter
+  artifactKey: Guid(61d3a6cd12902c04e9fff4ae2f30ebe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Winter using Guid(61d3a6cd12902c04e9fff4ae2f30ebe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7649c355170b48545f1f7df1e2e1cf7b') in 0.010806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.016756 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring
+  artifactKey: Guid(a811a9d212253cc42a2c4e23a9a523eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring using Guid(a811a9d212253cc42a2c4e23a9a523eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ee6c81b0d731c5738b72c3ead054d6') in 0.000506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.071294 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass.png
+  artifactKey: Guid(b3579ee017fa43248a1239cfafe431b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass.png using Guid(b3579ee017fa43248a1239cfafe431b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '816b82d5b03a3a0c5f75ef03f2e2f946') in 0.019651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(2).png
+  artifactKey: Guid(1158246e03b99f640831367e57e09fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(2).png using Guid(1158246e03b99f640831367e57e09fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb06192af0f38dda50202db70d2761b') in 0.019474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(1).png
+  artifactKey: Guid(1038c22bb6bc9f546bfa5c52195f303f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(1).png using Guid(1038c22bb6bc9f546bfa5c52195f303f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86bd4fdcd7e5be4bb7384d383a3a5297') in 0.019588 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(8).png
+  artifactKey: Guid(98b9b8157a9261e488258e43db00e071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(8).png using Guid(98b9b8157a9261e488258e43db00e071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '586af7daeb659021985bbc8dfc919c66') in 0.026209 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(9).png
+  artifactKey: Guid(eb4ce83aa27c42243b7a03a2a29c2903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(9).png using Guid(eb4ce83aa27c42243b7a03a2a29c2903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c3548dbf54dc90b53dffa2c880e6c6') in 0.020837 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/ground(1).png
+  artifactKey: Guid(1a663ee775c35fc48ac44635e1a298f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/ground(1).png using Guid(1a663ee775c35fc48ac44635e1a298f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd96f3cc4418cadcfb887c087f374786e') in 0.020029 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(3).png
+  artifactKey: Guid(12a26c9058dc06a4393233acbceb4998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(3).png using Guid(12a26c9058dc06a4393233acbceb4998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddea3792ce3f80338887a82cc7b60021') in 0.020629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(5).png
+  artifactKey: Guid(839e710a29e7f834298ea14a5a5e932b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(5).png using Guid(839e710a29e7f834298ea14a5a5e932b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '354d618c5cf12fb733b033a445b81885') in 0.019613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(7).png
+  artifactKey: Guid(d4e6ed1b786de0d44a161025a7b021a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(7).png using Guid(d4e6ed1b786de0d44a161025a7b021a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b014458cfaf112060166109a2f631d10') in 0.021573 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(4).png
+  artifactKey: Guid(21c4f61ed8f4c5345a6d4f67aae3e3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(4).png using Guid(21c4f61ed8f4c5345a6d4f67aae3e3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3658d309269d8bb9231a638fb46c067') in 0.019363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/ground(2).png
+  artifactKey: Guid(35e1e30c0c65b4e4c9a1b5035d459bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/ground(2).png using Guid(35e1e30c0c65b4e4c9a1b5035d459bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dedad52a8d0ede4a25e98020fa9cb23b') in 0.020598 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(6).png
+  artifactKey: Guid(1fb6de7f31c4c4e44b5cff169fe5df6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Enviroument/Spring/grass_detail(6).png using Guid(1fb6de7f31c4c4e44b5cff169fe5df6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b29f3afd61cffa202be0adb2cdc8ed') in 0.020110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.708260 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Towers
+  artifactKey: Guid(796f5d05754b24c4da99c8961d09f903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Towers using Guid(796f5d05754b24c4da99c8961d09f903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0634bdfbfdb840591a24866e3a9cc902') in 0.000538 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.834035 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Towers/Green towers
+  artifactKey: Guid(da1c194059739cc478215f243abbfc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Towers/Green towers using Guid(da1c194059739cc478215f243abbfc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b4c2a71e75a30534ca093c834eb13c') in 0.012218 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.076489 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(1).png
+  artifactKey: Guid(bce467e332e761547afba29263d06bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(1).png using Guid(bce467e332e761547afba29263d06bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23ec898b35dfe6e659930f62d0454177') in 0.021656 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(3).png
+  artifactKey: Guid(e9e6cd0e5f8012b44b01f69fb6c599cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(3).png using Guid(e9e6cd0e5f8012b44b01f69fb6c599cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '092ae14f3fbd5a53c972bf8310c2b972') in 0.022476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(5).png
+  artifactKey: Guid(f790a6a970477c244b6d19f3fb716d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(5).png using Guid(f790a6a970477c244b6d19f3fb716d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ad22dc936504e739485d3b2f388d8e7') in 0.020030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(9).png
+  artifactKey: Guid(523fa1070b5588d48bdd2c632d8adb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(9).png using Guid(523fa1070b5588d48bdd2c632d8adb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a315421ef0a19cb93f67b1ad5aef3f5b') in 0.023312 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(6).png
+  artifactKey: Guid(788fcbf9f44dcb8438c0b53c08f87451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(6).png using Guid(788fcbf9f44dcb8438c0b53c08f87451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd0fc501fc30ad05cfe259ddb4a57e18') in 0.022727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(7).png
+  artifactKey: Guid(ca597ac44a6c9f54199e99ba8da3b3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(7).png using Guid(ca597ac44a6c9f54199e99ba8da3b3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba0893e252bf231abf20dcf37be0075') in 0.022168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(8).png
+  artifactKey: Guid(dd0922e2b7d0f3f4da8b19b413428a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(8).png using Guid(dd0922e2b7d0f3f4da8b19b413428a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '446207b2fcedecc133557aaa432bcfcd') in 0.022982 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(4).png
+  artifactKey: Guid(3db859330ac34f54db3c6aa737851a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(4).png using Guid(3db859330ac34f54db3c6aa737851a4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9771ab2288a3e9ec40c692f484c94d') in 0.021855 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(2).png
+  artifactKey: Guid(0c498215d41509e47976f84246cb3dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Sprites/Towers/Green towers/castle_tower_green(2).png using Guid(0c498215d41509e47976f84246cb3dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f30106088d703a7a77c6786d030b06a') in 0.025316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 11.948017 seconds.
+  path: Assets/Isometric Medieval Pack/Vector
+  artifactKey: Guid(56f98989a4502144797ff6da185b7836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Isometric Medieval Pack/Vector using Guid(56f98989a4502144797ff6da185b7836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8b6e995c0e871c5b3238d8c217fc52') in 0.011416 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 25.27 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 6.73 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 1 unused Assets / (0.9 KB). Loaded Objects now: 4542.
-Memory consumption went from 84.7 MB to 84.7 MB.
-Total: 5.688000 ms (FindLiveObjects: 0.701000 ms CreateObjectMapping: 0.232700 ms MarkObjects: 4.726200 ms  DeleteObjects: 0.027000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  4.922 seconds
-Refreshing native plugins compatible for Editor in 8.77 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.919 seconds
-Domain Reload Profiling: 10836ms
-	BeginReloadAssembly (1148ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (698ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (213ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (61ms)
-	LoadAllAssembliesAndSetupDomain (3635ms)
-		LoadAssemblies (3807ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (18ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (5921ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3396ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (56ms)
-			SetLoadedEditorAssemblies (13ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (249ms)
-			ProcessInitializeOnLoadAttributes (2822ms)
-			ProcessInitializeOnLoadMethodAttributes (226ms)
-			AfterProcessingInitializeOnLoad (29ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
-Refreshing native plugins compatible for Editor in 22.34 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4044 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (35.1 KB). Loaded Objects now: 4547.
-Memory consumption went from 149.3 MB to 149.3 MB.
-Total: 5.083800 ms (FindLiveObjects: 0.479700 ms CreateObjectMapping: 0.140200 ms MarkObjects: 4.391900 ms  DeleteObjects: 0.070200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.321 seconds
-Refreshing native plugins compatible for Editor in 9.43 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.775 seconds
-Domain Reload Profiling: 4092ms
-	BeginReloadAssembly (382ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (24ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (73ms)
-	RebuildCommonClasses (56ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (159ms)
-	LoadAllAssembliesAndSetupDomain (692ms)
-		LoadAssemblies (918ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (18ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (2776ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1225ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (51ms)
-			SetLoadedEditorAssemblies (10ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (222ms)
-			ProcessInitializeOnLoadAttributes (880ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 7.04 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4044 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (35.2 KB). Loaded Objects now: 4551.
-Memory consumption went from 151.2 MB to 151.2 MB.
-Total: 5.694500 ms (FindLiveObjects: 1.245400 ms CreateObjectMapping: 0.237700 ms MarkObjects: 4.139900 ms  DeleteObjects: 0.070500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.724 seconds
-Refreshing native plugins compatible for Editor in 7.36 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.501 seconds
-Domain Reload Profiling: 3223ms
-	BeginReloadAssembly (236ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (51ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (386ms)
-		LoadAssemblies (507ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (2501ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1156ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (39ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (233ms)
-			ProcessInitializeOnLoadAttributes (798ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 7.46 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4044 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (35.3 KB). Loaded Objects now: 4555.
-Memory consumption went from 153.1 MB to 153.1 MB.
-Total: 4.706000 ms (FindLiveObjects: 0.354400 ms CreateObjectMapping: 0.113800 ms MarkObjects: 4.123800 ms  DeleteObjects: 0.112800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.757 seconds
-Refreshing native plugins compatible for Editor in 6.98 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.369 seconds
-Domain Reload Profiling: 3125ms
-	BeginReloadAssembly (239ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (418ms)
-		LoadAssemblies (531ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (35ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (13ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (2370ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1034ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (35ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (183ms)
-			ProcessInitializeOnLoadAttributes (755ms)
-			ProcessInitializeOnLoadMethodAttributes (47ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 6.65 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4044 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (35.3 KB). Loaded Objects now: 4559.
-Memory consumption went from 155.1 MB to 155.1 MB.
-Total: 4.004100 ms (FindLiveObjects: 0.341200 ms CreateObjectMapping: 0.114200 ms MarkObjects: 3.483500 ms  DeleteObjects: 0.063800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.681 seconds
-Refreshing native plugins compatible for Editor in 6.60 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.129 seconds
-Domain Reload Profiling: 2808ms
-	BeginReloadAssembly (229ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (353ms)
-		LoadAssemblies (476ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (2130ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1130ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (40ms)
-			SetLoadedEditorAssemblies (10ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (203ms)
-			ProcessInitializeOnLoadAttributes (824ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 6.84 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4044 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (35.2 KB). Loaded Objects now: 4563.
-Memory consumption went from 157.0 MB to 157.0 MB.
-Total: 4.309200 ms (FindLiveObjects: 0.377200 ms CreateObjectMapping: 0.122100 ms MarkObjects: 3.739900 ms  DeleteObjects: 0.068700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.716 seconds
-Refreshing native plugins compatible for Editor in 8.48 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.071 seconds
-Domain Reload Profiling: 2785ms
-	BeginReloadAssembly (230ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (43ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (385ms)
-		LoadAssemblies (490ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (35ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (15ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (2072ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1101ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (37ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (197ms)
-			ProcessInitializeOnLoadAttributes (806ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 6.71 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4044 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (35.3 KB). Loaded Objects now: 4567.
-Memory consumption went from 159.0 MB to 158.9 MB.
-Total: 4.236000 ms (FindLiveObjects: 0.572900 ms CreateObjectMapping: 0.142100 ms MarkObjects: 3.453800 ms  DeleteObjects: 0.065700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.682 seconds
-Refreshing native plugins compatible for Editor in 8.35 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.187 seconds
-Domain Reload Profiling: 2868ms
-	BeginReloadAssembly (227ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (354ms)
-		LoadAssemblies (477ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (2188ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1152ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (63ms)
-			SetLoadedEditorAssemblies (8ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (196ms)
-			ProcessInitializeOnLoadAttributes (822ms)
-			ProcessInitializeOnLoadMethodAttributes (56ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 7.34 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4044 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (35.3 KB). Loaded Objects now: 4571.
-Memory consumption went from 160.9 MB to 160.9 MB.
-Total: 4.650900 ms (FindLiveObjects: 0.349800 ms CreateObjectMapping: 0.113900 ms MarkObjects: 4.111900 ms  DeleteObjects: 0.074100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 352.856949 seconds.
-  path: Assets/Buildings/Building.prefab
-  artifactKey: Guid(bc2d3db3e05303249837c1bb4eeecdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Buildings/Building.prefab using Guid(bc2d3db3e05303249837c1bb4eeecdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edeeebffb6936bea083644f65ef33068') in 0.173869 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 7.645722 seconds.
-  path: Assets/Buildings/Building.prefab
-  artifactKey: Guid(bc2d3db3e05303249837c1bb4eeecdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Buildings/Building.prefab using Guid(bc2d3db3e05303249837c1bb4eeecdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7893749978128b148193b7d7fd166d6a') in 0.009392 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.723 seconds
-Refreshing native plugins compatible for Editor in 8.45 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.967 seconds
-Domain Reload Profiling: 2687ms
-	BeginReloadAssembly (237ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (19ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (46ms)
-	RebuildCommonClasses (47ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (379ms)
-		LoadAssemblies (482ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (35ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (1ms)
-			ScanForSourceGeneratedMonoScriptInfo (13ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1968ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1061ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
-			SetLoadedEditorAssemblies (7ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (172ms)
-			ProcessInitializeOnLoadAttributes (790ms)
-			ProcessInitializeOnLoadMethodAttributes (52ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 6.85 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4043 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (36.3 KB). Loaded Objects now: 4582.
-Memory consumption went from 162.7 MB to 162.7 MB.
-Total: 4.663400 ms (FindLiveObjects: 0.456500 ms CreateObjectMapping: 0.117500 ms MarkObjects: 4.017500 ms  DeleteObjects: 0.070000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.694 seconds
-Refreshing native plugins compatible for Editor in 7.39 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.127 seconds
-Domain Reload Profiling: 2820ms
-	BeginReloadAssembly (226ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (366ms)
-		LoadAssemblies (487ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (14ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (2128ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1114ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (39ms)
-			SetLoadedEditorAssemblies (9ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (190ms)
-			ProcessInitializeOnLoadAttributes (814ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (20ms)
-Refreshing native plugins compatible for Editor in 8.29 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4044 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (35.3 KB). Loaded Objects now: 4586.
-Memory consumption went from 164.9 MB to 164.8 MB.
-Total: 5.125900 ms (FindLiveObjects: 0.490700 ms CreateObjectMapping: 0.515000 ms MarkObjects: 4.051300 ms  DeleteObjects: 0.067500 ms)
+Unloading 1 unused Assets / (0.9 KB). Loaded Objects now: 4622.
+Memory consumption went from 85.9 MB to 85.9 MB.
+Total: 6.540700 ms (FindLiveObjects: 0.374400 ms CreateObjectMapping: 0.113000 ms MarkObjects: 6.027700 ms  DeleteObjects: 0.024400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
