@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,10 +21,13 @@ public class GameManager : MonoBehaviour
 
     private Building buildingToPlace;
     public GameObject grid;
+    public GameObject grid2;
+
 
     public CustomCursor customCursor;
 
     public Tile[] tiles;
+    public Tile[] tiles2;
 
     public GameObject messageResources;
 
@@ -85,11 +89,12 @@ public class GameManager : MonoBehaviour
         energyText.text = energy.ToString();
         if (Input.GetMouseButtonDown(0) && buildingToPlace != null)
         {
+            grid2.SetActive(false);
             placement.Play();
-
+            var allTiles = tiles.Concat(tiles2);
             Tile nearestTile = null;
             float nearestDistance = float.MaxValue;
-            foreach(Tile tile in tiles)
+            foreach (Tile tile in tiles)
             {
                 float dist = Vector2.Distance(tile.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
                 if (dist < nearestDistance)
@@ -105,6 +110,37 @@ public class GameManager : MonoBehaviour
                 buildingToPlace = null;
                 nearestTile.isOccupied = true;
                 grid.SetActive(false);
+                grid2.SetActive(false);
+
+                customCursor.gameObject.SetActive(false);
+                Cursor.visible = true;
+            }
+        }
+
+
+        if (Input.GetMouseButtonDown(0) && buildingToPlace != null)
+        {
+            placement.Play();
+            var allTiles = tiles.Concat(tiles2);
+            Tile nearestTile = null;
+            float nearestDistance = float.MaxValue;
+            foreach (Tile tile in tiles2)
+            {
+                float dist = Vector2.Distance(tile.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+                if (dist < nearestDistance)
+                {
+                    nearestDistance = dist;
+                    nearestTile = tile;
+                }
+            }
+            if (nearestTile.isOccupied == false)
+            {
+
+                Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
+                buildingToPlace = null;
+                nearestTile.isOccupied = true;
+                grid.SetActive(false);
+                grid2.SetActive(false);
 
                 customCursor.gameObject.SetActive(false);
                 Cursor.visible = true;
@@ -135,6 +171,7 @@ public class GameManager : MonoBehaviour
             energy -= building.energyCost;
             buildingToPlace = building;
             grid.SetActive(true);
+            grid2.SetActive(true);
         }
         else
         {
