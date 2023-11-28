@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public GameObject grid;
     public GameObject grid2;
 
+    public GameObject land1;
 
     public CustomCursor customCursor;
 
@@ -87,64 +88,64 @@ public class GameManager : MonoBehaviour
     {
         coinText.text = coin.ToString();
         energyText.text = energy.ToString();
-        if (Input.GetMouseButtonDown(0) && buildingToPlace != null)
-        {
-            grid2.SetActive(false);
-            placement.Play();
-            var allTiles = tiles.Concat(tiles2);
-            Tile nearestTile = null;
-            float nearestDistance = float.MaxValue;
-            foreach (Tile tile in tiles)
-            {
-                float dist = Vector2.Distance(tile.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-                if (dist < nearestDistance)
-                {
-                    nearestDistance = dist;
-                    nearestTile = tile;
-                }
-            }
-            if (nearestTile.isOccupied == false)
-            {
 
-                Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
-                buildingToPlace = null;
-                nearestTile.isOccupied = true;
-                grid.SetActive(false);
-                grid2.SetActive(false);
-
-                customCursor.gameObject.SetActive(false);
-                Cursor.visible = true;
-            }
-        }
-
-
+        bool wasLand1Active = land1.activeSelf;
         if (Input.GetMouseButtonDown(0) && buildingToPlace != null)
         {
             placement.Play();
-            var allTiles = tiles.Concat(tiles2);
+            //var allTiles = tiles.Concat(tiles2);
             Tile nearestTile = null;
             float nearestDistance = float.MaxValue;
-            foreach (Tile tile in tiles2)
+
+            if (wasLand1Active)
             {
-                float dist = Vector2.Distance(tile.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-                if (dist < nearestDistance)
+                foreach (Tile tile in tiles)
                 {
-                    nearestDistance = dist;
-                    nearestTile = tile;
+                    float dist = Vector2.Distance(tile.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+                    if (dist < nearestDistance)
+                    {
+                        nearestDistance = dist;
+                        nearestTile = tile;
+                    }
+                }
+                if (nearestTile.isOccupied == false)
+                {
+
+                    Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
+                    buildingToPlace = null;
+                    nearestTile.isOccupied = true;
+                    grid.SetActive(false);
+                    grid2.SetActive(false);
+
+                    customCursor.gameObject.SetActive(false);
+                    Cursor.visible = true;
                 }
             }
-            if (nearestTile.isOccupied == false)
+            else
             {
+                foreach (Tile tile in tiles2)
+                {
+                    float dist = Vector2.Distance(tile.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+                    if (dist < nearestDistance)
+                    {
+                        nearestDistance = dist;
+                        nearestTile = tile;
+                    }
+                }
+                if (nearestTile.isOccupied == false)
+                {
 
-                Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
-                buildingToPlace = null;
-                nearestTile.isOccupied = true;
-                grid.SetActive(false);
-                grid2.SetActive(false);
+                    Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
+                    buildingToPlace = null;
+                    nearestTile.isOccupied = true;
+                    grid.SetActive(false);
+                    grid2.SetActive(false);
 
-                customCursor.gameObject.SetActive(false);
-                Cursor.visible = true;
+                    customCursor.gameObject.SetActive(false);
+                    Cursor.visible = true;
+                }
             }
+            
         }
     }
 
@@ -159,24 +160,53 @@ public class GameManager : MonoBehaviour
 
     public void BuyBuilding(Building building)
     {
-        if (coin >= building.cost && energy>=building.energyCost)
+        bool wasLand1Active = land1.activeSelf;
+        //land1.SetActive(false);
+        if (wasLand1Active)
         {
-            buyBuilding.Play();
+            
 
-            customCursor.gameObject.SetActive(true);
-            customCursor.GetComponent<SpriteRenderer>().sprite = building.GetComponent<SpriteRenderer>().sprite;
-            Cursor.visible = false;
+            if (coin >= building.cost && energy >= building.energyCost)
+            {
+                buyBuilding.Play();
 
-            coin -= building.cost;
-            energy -= building.energyCost;
-            buildingToPlace = building;
-            grid.SetActive(true);
-            grid2.SetActive(true);
+                customCursor.gameObject.SetActive(true);
+                customCursor.GetComponent<SpriteRenderer>().sprite = building.GetComponent<SpriteRenderer>().sprite;
+                Cursor.visible = false;
+
+                coin -= building.cost;
+                energy -= building.energyCost;
+                buildingToPlace = building;
+                grid.SetActive(true);
+
+            }
+            else
+            {
+                StartCoroutine(ShowMessage(1f));
+                message.Play();
+            }
         }
         else
         {
-            StartCoroutine(ShowMessage(1f));
-            message.Play();
+            if (coin >= building.cost && energy >= building.energyCost)
+            {
+                buyBuilding.Play();
+
+                customCursor.gameObject.SetActive(true);
+                customCursor.GetComponent<SpriteRenderer>().sprite = building.GetComponent<SpriteRenderer>().sprite;
+                Cursor.visible = false;
+
+                coin -= building.cost;
+                energy -= building.energyCost;
+                buildingToPlace = building;
+                grid2.SetActive(true);
+
+            }
+            else
+            {
+                StartCoroutine(ShowMessage(1f));
+                message.Play();
+            }
         }
     }
 }

@@ -32015,6 +32015,7 @@ MonoBehaviour:
   earningBuildings: 100
   grid: {fileID: 1391133693}
   grid2: {fileID: 264896179}
+  land1: {fileID: 245650049}
   customCursor: {fileID: 2000691153}
   tiles:
   - {fileID: 669750314}
