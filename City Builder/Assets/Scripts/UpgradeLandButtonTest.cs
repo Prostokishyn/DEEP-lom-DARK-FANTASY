@@ -2,9 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
-//using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-//using static UnityEditor.Timeline.TimelinePlaybackControls;
 using static UnityEngine.EventSystems.EventTrigger;
 
 public class UpgradeLandButtonTest : MonoBehaviour
