@@ -15,6 +15,7 @@ public class UpgradeLandButtonTest : MonoBehaviour
     public GameObject upgradeButton;
     public GameObject upgradeLandMessage;
 
+    public AudioSource upgraded;
     public AudioSource message;
 
     IEnumerator ShowUpgradeLandMessage(float seconds)
@@ -30,9 +31,11 @@ public class UpgradeLandButtonTest : MonoBehaviour
     {
         if (gameManager.coin >= upgradeLandCost)
         {
-            land1.SetActive(false);
 
+            land1.SetActive(false);
+            upgraded.Play();
             land2.SetActive(true);
+
             gameManager.coin -= upgradeLandCost;
 
             Destroy(upgradeButton);
