@@ -8,6 +8,21 @@ public class PauseButton : MonoBehaviour
 {
     public GameObject UserInterface;
     public GameObject PauseInterface;
+    public GameObject Settings;
+    public GameObject audioButton;
+
+    public AudioListener music;
+    public AudioSource musicSource;
+
+    public Slider AudioSlider;
+
+    public Sprite audioOff;
+    public Sprite audioOn;
+
+    void Update()
+    {
+        musicSource.volume = AudioSlider.value;
+    }
 
     public void Pause()
     {
@@ -19,6 +34,26 @@ public class PauseButton : MonoBehaviour
     {
         UserInterface.SetActive(!UserInterface.activeSelf);
         PauseInterface.SetActive(!PauseInterface.activeSelf);
+    }
+
+    public void OpenCloseAudioSettings()
+    {
+        PauseInterface.SetActive(!PauseInterface.activeSelf);
+        Settings.SetActive(!Settings.activeSelf);
+    }
+
+    public void AuidoSettings()
+    {
+        if (AudioListener.volume == 1)
+        {
+            AudioListener.volume = 0;
+            audioButton.GetComponent<Image>().sprite = audioOff;
+        }
+        else
+        {
+            AudioListener.volume = 1;
+            audioButton.GetComponent<Image>().sprite = audioOn;
+        }
     }
 
     public void ExitOnMenu()
