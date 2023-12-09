@@ -93,7 +93,6 @@ public class GameManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && buildingToPlace != null)
         {
             placement.Play();
-            //var allTiles = tiles.Concat(tiles2);
             Tile nearestTile = null;
             float nearestDistance = float.MaxValue;
 
@@ -160,53 +159,30 @@ public class GameManager : MonoBehaviour
 
     public void BuyBuilding(Building building)
     {
-        bool wasLand1Active = land1.activeSelf;
-        //land1.SetActive(false);
-        if (wasLand1Active)
+        bool isLand1Active = land1.activeSelf;
+        bool canAfford = coin >= building.cost && energy >= building.energyCost;
+
+        if (canAfford)
         {
-            
+            buyBuilding.Play();
 
-            if (coin >= building.cost && energy >= building.energyCost)
-            {
-                buyBuilding.Play();
+            customCursor.gameObject.SetActive(true);
+            customCursor.GetComponent<SpriteRenderer>().sprite = building.GetComponent<SpriteRenderer>().sprite;
+            Cursor.visible = false;
 
-                customCursor.gameObject.SetActive(true);
-                customCursor.GetComponent<SpriteRenderer>().sprite = building.GetComponent<SpriteRenderer>().sprite;
-                Cursor.visible = false;
+            coin -= building.cost;
+            energy -= building.energyCost;
+            buildingToPlace = building;
 
-                coin -= building.cost;
-                energy -= building.energyCost;
-                buildingToPlace = building;
+            if (isLand1Active)
                 grid.SetActive(true);
-
-            }
             else
-            {
-                StartCoroutine(ShowMessage(1f));
-                message.Play();
-            }
+                grid2.SetActive(true);
         }
         else
         {
-            if (coin >= building.cost && energy >= building.energyCost)
-            {
-                buyBuilding.Play();
-
-                customCursor.gameObject.SetActive(true);
-                customCursor.GetComponent<SpriteRenderer>().sprite = building.GetComponent<SpriteRenderer>().sprite;
-                Cursor.visible = false;
-
-                coin -= building.cost;
-                energy -= building.energyCost;
-                buildingToPlace = building;
-                grid2.SetActive(true);
-
-            }
-            else
-            {
-                StartCoroutine(ShowMessage(1f));
-                message.Play();
-            }
+            StartCoroutine(ShowMessage(1f));
+            message.Play();
         }
     }
 }
