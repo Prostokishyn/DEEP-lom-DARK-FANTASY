@@ -31,7 +31,10 @@ public class ExpSystem : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            AddExperience(50);
+            if (currentLevel < maxLevel)
+            {
+                AddExperience(50);
+            }
         }
     }
 
