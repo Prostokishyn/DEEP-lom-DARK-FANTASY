@@ -99,3 +99,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 100
   energyCost: 10
+  lvlNeeded: 5

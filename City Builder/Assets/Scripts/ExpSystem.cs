@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -8,6 +9,8 @@ using UnityEngine.UI;
 public class ExpSystem : MonoBehaviour
 {
     public GameObject UpgradeLandButton;
+
+    public Building[] Buildngs;
 
     [Header("Experience")]
     [SerializeField] AnimationCurve experienceCurve;
@@ -27,6 +30,14 @@ public class ExpSystem : MonoBehaviour
         UpdateLevel();
     }
 
+    public GameObject level1Reward;
+    public GameObject level2Reward;
+    public GameObject level3Reward;
+    public GameObject level3_2Reward;
+    public GameObject level4Reward;
+    public GameObject level4_2Reward;
+    public GameObject level5Reward;
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -35,6 +46,33 @@ public class ExpSystem : MonoBehaviour
             {
                 AddExperience(50);
             }
+        }
+
+        if (currentLevel == 1)
+        {
+            level1Reward.GetComponent<Button>().interactable = true;
+        }
+
+        if (currentLevel == 2)
+        {
+            level2Reward.GetComponent<Button>().interactable = true;
+        }
+
+        if (currentLevel == 3)
+        {
+            level3Reward.GetComponent<Button>().interactable = true;
+            level3_2Reward.GetComponent<Button>().interactable = true;
+        }
+
+        if (currentLevel == 4)
+        {
+            level4Reward.GetComponent<Button>().interactable = true;
+            level4_2Reward.GetComponent<Button>().interactable = true;
+        }
+
+        if (currentLevel == 5)
+        {
+            level5Reward.GetComponent<Button>().interactable = true;
         }
     }
 

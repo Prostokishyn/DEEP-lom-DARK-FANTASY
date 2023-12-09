@@ -38,6 +38,9 @@ public class GameManager : MonoBehaviour
     public AudioSource energyRecovery;
     public AudioSource earning;
 
+    public TextMeshProUGUI currentLevel;
+    public int lvl;
+
     private void Start()
     {
         StartCoroutine(ReplenishEnergyRoutine());
@@ -143,8 +146,7 @@ public class GameManager : MonoBehaviour
                     customCursor.gameObject.SetActive(false);
                     Cursor.visible = true;
                 }
-            }
-            
+            }    
         }
     }
 
@@ -159,9 +161,9 @@ public class GameManager : MonoBehaviour
 
     public void BuyBuilding(Building building)
     {
+        currentLevel.text = lvl.ToString();
         bool isLand1Active = land1.activeSelf;
         bool canAfford = coin >= building.cost && energy >= building.energyCost;
-
         if (canAfford)
         {
             buyBuilding.Play();
