@@ -7,6 +7,7 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
+    //ресурси
     public int coin;
     public TextMeshProUGUI coinText;
 
@@ -19,25 +20,32 @@ public class GameManager : MonoBehaviour
     public float earningBuildingsInterval = 60.0f;
     public int earningBuildings = 100;
 
+    //придбання та побудова
     private Building buildingToPlace;
+    public Building buildingPlaced;
+
     public GameObject grid;
     public GameObject grid2;
-
-    public GameObject land1;
-
-    public CustomCursor customCursor;
 
     public Tile[] tiles;
     public Tile[] tiles2;
 
+    public GameObject land1;
+
+    //треба видалити
+    public CustomCursor customCursor;
+
+    //повідомлення про недостатню кількість ресурсів
     public GameObject messageResources;
 
+    //звукове супроводження
     public AudioSource buyBuilding;
     public AudioSource placement;
     public AudioSource message;
     public AudioSource energyRecovery;
     public AudioSource earning;
 
+    //рівень
     public TextMeshProUGUI currentLevel;
     public int lvl;
 
@@ -48,6 +56,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(GenerateBuildingIncome());
     }
 
+    //відновлення енергії та дохід з будинків
     private IEnumerator ReplenishEnergyRoutine()
     {
         while (true)
@@ -112,7 +121,6 @@ public class GameManager : MonoBehaviour
                 }
                 if (nearestTile.isOccupied == false)
                 {
-
                     Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
                     buildingToPlace = null;
                     nearestTile.isOccupied = true;
@@ -121,6 +129,9 @@ public class GameManager : MonoBehaviour
 
                     customCursor.gameObject.SetActive(false);
                     Cursor.visible = true;
+
+                    // Викликати метод BuildingPurchased при купівлі будівлі
+                    //BuildingPurchased();
                 }
             }
             else
@@ -136,7 +147,6 @@ public class GameManager : MonoBehaviour
                 }
                 if (nearestTile.isOccupied == false)
                 {
-
                     Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
                     buildingToPlace = null;
                     nearestTile.isOccupied = true;
@@ -145,11 +155,15 @@ public class GameManager : MonoBehaviour
 
                     customCursor.gameObject.SetActive(false);
                     Cursor.visible = true;
+
+                    // Викликати метод BuildingPurchased при купівлі будівлі
+                    //BuildingPurchased();
                 }
-            }    
+            }
         }
     }
 
+    //повідомлення про недостатню кількість ресурсів
     IEnumerator ShowMessage(float seconds)
     {
         messageResources.gameObject.SetActive(true);
@@ -159,15 +173,15 @@ public class GameManager : MonoBehaviour
         messageResources.gameObject.SetActive(false);
     }
 
+    //придбання будівль
+
     public void BuyBuilding(Building building)
     {
-        currentLevel.text = lvl.ToString();
         bool isLand1Active = land1.activeSelf;
         bool canAfford = coin >= building.cost && energy >= building.energyCost;
         if (canAfford)
         {
             buyBuilding.Play();
-
             customCursor.gameObject.SetActive(true);
             customCursor.GetComponent<SpriteRenderer>().sprite = building.GetComponent<SpriteRenderer>().sprite;
             Cursor.visible = false;
@@ -180,6 +194,8 @@ public class GameManager : MonoBehaviour
                 grid.SetActive(true);
             else
                 grid2.SetActive(true);
+
+            buildingPlaced = buildingToPlace;
         }
         else
         {

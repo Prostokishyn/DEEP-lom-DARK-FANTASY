@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 public class PauseButton : MonoBehaviour
 {
     public GameObject UserInterface;
+    public GameObject resources;
     public GameObject QuestsMenu;
     public GameObject PauseInterface;
     public GameObject Settings;
     public GameObject audioButton;
+    public GameObject shopMenu;
 
 
     public AudioListener music;
@@ -28,16 +30,16 @@ public class PauseButton : MonoBehaviour
 
     public void Pause()
     {
-        UserInterface.SetActive(!UserInterface.activeSelf);
-        PauseInterface.SetActive(!PauseInterface.activeSelf);
-        QuestsMenu.SetActive(!QuestsMenu.activeSelf);
+        UserInterface.SetActive(false);
+        PauseInterface.SetActive(true);
+        QuestsMenu.SetActive(false);
+        shopMenu.SetActive(false);
     }
 
     public void BackToTheGame()
     {
-        UserInterface.SetActive(!UserInterface.activeSelf);
-        PauseInterface.SetActive(!PauseInterface.activeSelf);
-        QuestsMenu.SetActive(!QuestsMenu.activeSelf);
+        UserInterface.SetActive(true);
+        PauseInterface.SetActive(false);
     }
 
     public void OpenCloseAudioSettings()
