@@ -129,9 +129,6 @@ public class GameManager : MonoBehaviour
 
                     customCursor.gameObject.SetActive(false);
                     Cursor.visible = true;
-
-                    // Викликати метод BuildingPurchased при купівлі будівлі
-                    //BuildingPurchased();
                 }
             }
             else
@@ -155,9 +152,6 @@ public class GameManager : MonoBehaviour
 
                     customCursor.gameObject.SetActive(false);
                     Cursor.visible = true;
-
-                    // Викликати метод BuildingPurchased при купівлі будівлі
-                    //BuildingPurchased();
                 }
             }
         }

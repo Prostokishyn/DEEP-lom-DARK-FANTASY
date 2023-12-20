@@ -10,7 +10,7 @@ public class ExpSystem : MonoBehaviour
 {
     public GameObject UpgradeLandButton;
 
-    public Building[] Buildngs;
+    //public Building[] Buildngs;
 
     [Header("Experience")]
     [SerializeField] AnimationCurve experienceCurve;

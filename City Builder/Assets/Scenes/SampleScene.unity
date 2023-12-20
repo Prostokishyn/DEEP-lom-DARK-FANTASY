@@ -2438,7 +2438,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UpgradeLandButton: {fileID: 1099880129}
-  Buildngs: []
   experienceCurve:
     serializedVersion: 2
     m_Curve:
@@ -8593,7 +8592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &593233141
 RectTransform:
   m_ObjectHideFlags: 0
