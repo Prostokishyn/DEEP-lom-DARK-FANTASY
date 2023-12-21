@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GameManager">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="UnityEngine.MonoBehaviour" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="1.191" />
+        <Point X="10.25" Y="7.367" />
+        <Point X="1.5" Y="7.367" />
+        <Point X="1.5" Y="6.992" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="tiles" Type="Tile">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.36" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="tiles2" Type="Tile">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.318" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="buildingPlaced" Type="Building">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.068" Y="0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="buildingToPlace" Type="Building">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.006" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="customCursor" Type="CustomCursor">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.068" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>IAQAAIogQCIACAQMJAAAAAAAAgwIAECABQEAICAAACE=</HashCode>
+      <FileName>Assets\Scripts\GameManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="buildingPlaced" />
+      <Field Name="buildingToPlace" />
+      <Field Name="customCursor" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="tiles" />
+      <Field Name="tiles2" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Building">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="UnityEngine.MonoBehaviour" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.25" Y="0.5" />
+        <Point X="9.25" Y="0.125" />
+        <Point X="4.25" Y="0.125" />
+        <Point X="4.25" Y="0.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\Scripts\Building.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tile">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="UnityEngine.MonoBehaviour" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.25" Y="1.191" />
+        <Point X="9.25" Y="4.562" />
+        <Point X="5" Y="4.562" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAACACAAAAAAAAAAAAAAAAAAIAAQAAA=</HashCode>
+      <FileName>Assets\Scripts\Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomCursor" Collapsed="true">
+    <Position X="3.5" Y="6.25" Width="1.5" />
+    <InheritanceLine Type="UnityEngine.MonoBehaviour" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.75" Y="1.191" />
+        <Point X="9.75" Y="6.625" />
+        <Point X="5" Y="6.625" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CustomCursor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuestManager">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="QuestManager.Quest" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\QuestManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="gameManager" Type="GameManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="1.454" Y="0.018" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEQQACAAACAAIAAAAQgAQAAAAAAACAAAAAgEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\QuestManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
