@@ -38719,14 +38719,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6c124601d7d21429347f02def349d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coin: 99999
+  coin: 250
   coinText: {fileID: 386285420}
-  energy: 99999
+  energy: 100
   energyText: {fileID: 10811973}
   energyReplenishInterval: 5
   energyReplenishAmount: 10
-  earningBuildingsInterval: 30
-  earningBuildings: 50
+  earningBuildingsInterval: 5
+  earningBuildings: 0
   buildingPlaced: {fileID: 0}
   grid: {fileID: 1391133693}
   grid2: {fileID: 264896179}

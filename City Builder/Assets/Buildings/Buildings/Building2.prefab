@@ -99,3 +99,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 150
   energyCost: 20
+  income: 1000
+  placed: 0

@@ -6,6 +6,6 @@ public class Building : MonoBehaviour
 {
     public int cost;
     public int energyCost;
-
+    public int income;
     public bool placed = false;
 }

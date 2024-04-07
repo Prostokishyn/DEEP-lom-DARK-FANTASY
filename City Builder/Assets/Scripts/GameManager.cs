@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     public Tile[] tiles;
     public Tile[] tiles2;
 
+    private List<Building> purchasedBuildings = new List<Building>();
+
     public GameObject land1;
 
     //треба видалити
@@ -86,13 +88,13 @@ public class GameManager : MonoBehaviour
 
     private void GenerateIncomeFromBuildings()
     {
-        foreach (Tile tile in tiles)
+        //coin = 0;
+
+        // Для кожної купленої будівлі додати її дохід до загального доходу
+        foreach (Building building in purchasedBuildings)
         {
-            if (tile.isOccupied)
-            {
-                coin += earningBuildings;
-                earning.Play();
-            }
+            coin += building.income;
+            earning.Play();
         }
     }
 
@@ -175,6 +177,7 @@ public class GameManager : MonoBehaviour
         bool canAfford = coin >= building.cost && energy >= building.energyCost;
         if (canAfford)
         {
+            purchasedBuildings.Add(building);
             buyBuilding.Play();
             customCursor.gameObject.SetActive(true);
             customCursor.GetComponent<SpriteRenderer>().sprite = building.GetComponent<SpriteRenderer>().sprite;
@@ -190,6 +193,7 @@ public class GameManager : MonoBehaviour
                 grid2.SetActive(true);
 
             buildingPlaced = buildingToPlace;
+
         }
         else
         {
