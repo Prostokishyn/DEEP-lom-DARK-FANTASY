@@ -11,7 +11,8 @@ public class QuestManager : MonoBehaviour
     {
         public string name;
         public string condition;
-        public int reward;
+        public int rewardGold;
+        public int rewardExp;
         public bool completed;
     }
 
@@ -24,13 +25,14 @@ public class QuestManager : MonoBehaviour
     private int currentQuestIndex;
 
     public GameManager gameManager;
+    public ExpSystem expSystem;
 
     private void Start()
     {
         quests = new List<Quest>
         {
-            new Quest { name = "Money", condition = "Collect 10 coins", reward = 100 },
-            new Quest { name = "My house", condition = "Buy a first building", reward = 200 }
+            new Quest { name = "Money", condition = "Collect 10 coins", rewardGold = 100, rewardExp = 250 },
+            new Quest { name = "My house", condition = "Buy a first building", rewardGold = 200, rewardExp = 500 }
         };
 
         currentQuestIndex = 0;
@@ -40,6 +42,8 @@ public class QuestManager : MonoBehaviour
     private void Update()
     {
         CheckQuestCompletion();
+        expSystem.CheckForLevelUp();
+        expSystem.UpdateInterface();
     }
 
     private void CheckQuestCompletion()
@@ -69,7 +73,7 @@ public class QuestManager : MonoBehaviour
         Quest currentQuest = quests[currentQuestIndex];
         questNameText.text = currentQuest.name;
         questConditionText.text = currentQuest.condition;
-        questRewardText.text = "+" + currentQuest.reward + " coins";
+        questRewardText.text = "+" + currentQuest.rewardGold + " coins\n" + "+" + currentQuest.rewardExp + " exp";
         claimButton.interactable = false; // Заблокувати кнопку до виконання умови
     }
 
@@ -78,7 +82,8 @@ public class QuestManager : MonoBehaviour
         if (currentQuestIndex < quests.Count && !quests[currentQuestIndex].completed)
         {
             // Якщо кнопка натиснута та квест не забраний, отримати нагороду
-            gameManager.coin += quests[currentQuestIndex].reward;
+            gameManager.coin += quests[currentQuestIndex].rewardGold;
+            expSystem.totalExperience += quests[currentQuestIndex].rewardExp;
             quests[currentQuestIndex].completed = true; // Позначити квест як вже забраний
 
             currentQuestIndex++;
@@ -90,8 +95,8 @@ public class QuestManager : MonoBehaviour
             else
             {
                 // Якщо більше немає квестів
-                questNameText.text = "No more quests";
-                questConditionText.text = "You have completed all the quests!";
+                questNameText.text = "Нема квестів";
+                questConditionText.text = "Ви виконали всі квести!";
                 questRewardText.text = "";
                 claimButton.gameObject.SetActive(false);
             }

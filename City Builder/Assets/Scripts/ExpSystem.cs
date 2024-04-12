@@ -15,7 +15,7 @@ public class ExpSystem : MonoBehaviour
     [Header("Experience")]
     [SerializeField] AnimationCurve experienceCurve;
 
-    int currentLevel, totalExperience;
+    public int currentLevel, totalExperience;
     int previousLevelsExperience, nextLevelsExperience;
 
     int maxLevel = 5;
@@ -40,13 +40,13 @@ public class ExpSystem : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (currentLevel < maxLevel)
-            {
-                AddExperience(50);
-            }
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //   if (currentLevel < maxLevel)
+        //    {
+        //        AddExperience(50);
+        //    }
+        //}
 
         if (currentLevel == 1)
         {
@@ -83,7 +83,7 @@ public class ExpSystem : MonoBehaviour
         UpdateInterface();
     }
 
-    void CheckForLevelUp()
+    public void CheckForLevelUp()
     {
         if (totalExperience >= nextLevelsExperience)
         {
@@ -101,7 +101,7 @@ public class ExpSystem : MonoBehaviour
         UpdateInterface();
     }
 
-    void UpdateInterface()
+    public void UpdateInterface()
     {
         int start = totalExperience - previousLevelsExperience;
         int end = nextLevelsExperience - previousLevelsExperience;
