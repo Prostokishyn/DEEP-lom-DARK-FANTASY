@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -53,7 +53,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -119,20 +119,264 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: rettungsreif_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 197
+        width: 58
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6380f3d5fac1b44bd4ff4be22b7006
+      internalID: -497454973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rettungsreif_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 195
+        width: 63
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fdeeea51c824e4984e3be6d63bc7c1
+      internalID: 751727817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rettungsreif_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 191
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9d154f77b22b742a9bc1b85498684c
+      internalID: 1523690903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rettungsreif_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 196
+        width: 55
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf81e0d114de214f87393bf676fcc66
+      internalID: -708288116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: 20, y: 69}
+      - {x: 19, y: 67}
+      - {x: 21, y: 64}
+      - {x: 23, y: 63}
+      - {x: 30, y: 63}
+      - {x: 33, y: 64}
+      - {x: 33, y: 67}
+      - {x: 30, y: 68}
+      - {x: 23, y: 69}
+    - - {x: 16, y: 65}
+      - {x: 19, y: 66}
+      - {x: 19, y: 69}
+      - {x: 16, y: 70}
+      - {x: 14, y: 68}
+    - - {x: 36, y: 71}
+      - {x: 34, y: 68}
+      - {x: 35, y: 65}
+      - {x: 38, y: 65}
+      - {x: 43, y: 67}
+      - {x: 43, y: 71}
+    - - {x: -52, y: 117}
+      - {x: -65, y: 111}
+      - {x: -65, y: 71}
+      - {x: -53, y: 67}
+      - {x: -4, y: 67}
+      - {x: -2, y: 72}
+      - {x: -2, y: 112}
+      - {x: -6, y: 117}
+    - - {x: 2, y: 76}
+      - {x: 11, y: 68}
+      - {x: 15, y: 68}
+      - {x: 15, y: 74}
+      - {x: 14, y: 77}
+      - {x: 6, y: 81}
+      - {x: 2, y: 81}
+    - - {x: 56, y: 106}
+      - {x: 55, y: 103}
+      - {x: 44, y: 74}
+      - {x: 44, y: 68}
+      - {x: 48, y: 68}
+      - {x: 64, y: 81}
+      - {x: 64, y: 104}
+      - {x: 58, y: 106}
+    - - {x: -118, y: 115}
+      - {x: -128, y: 108}
+      - {x: -128, y: 76}
+      - {x: -111, y: 69}
+      - {x: -73, y: 69}
+      - {x: -69, y: 72}
+      - {x: -69, y: 115}
+    - - {x: -46, y: 74}
+      - {x: -50, y: 77}
+      - {x: -51, y: 77}
+      - {x: -57, y: 83}
+      - {x: -58, y: 87}
+      - {x: -59, y: 88}
+      - {x: -59, y: 96}
+      - {x: -56, y: 101}
+      - {x: -46, y: 111}
+      - {x: -49, y: 111}
+      - {x: -57, y: 102}
+      - {x: -59, y: 99}
+      - {x: -59, y: 88}
+      - {x: -56, y: 84}
+      - {x: -56, y: 83}
+      - {x: -49, y: 75}
+      - {x: -43, y: 63}
+      - {x: -2, y: 77}
+      - {x: -7, y: 99}
+      - {x: -16, y: 79}
+      - {x: -23, y: 73}
+      - {x: -22, y: 73}
+      - {x: -23, y: 74}
+      - {x: -25, y: 74}
+      - {x: -42, y: 73}
+      - {x: -44, y: 72}
+      - {x: -44, y: 73}
+    - - {x: 72, y: 113}
+      - {x: 67, y: 101}
+      - {x: 67, y: 78}
+      - {x: 80, y: 70}
+      - {x: 108, y: 70}
+      - {x: 121, y: 83}
+      - {x: 121, y: 111}
+      - {x: 113, y: 113}
+    - - {x: 24, y: 119}
+      - {x: 22, y: 118}
+      - {x: 5, y: 105}
+      - {x: 5, y: 86}
+      - {x: 11, y: 72}
+      - {x: 43, y: 72}
+      - {x: 55, y: 84}
+      - {x: 55, y: 106}
+      - {x: 41, y: 119}
+    - - {x: -2, y: 83}
+      - {x: 1, y: 80}
+      - {x: 4, y: 81}
+      - {x: 4, y: 83}
+      - {x: 1, y: 86}
+      - {x: -1, y: 86}
+    - - {x: 15, y: 119}
+      - {x: -2, y: 108}
+      - {x: -2, y: 88}
+      - {x: 0, y: 86}
+      - {x: 4, y: 87}
+      - {x: 27, y: 115}
+      - {x: 27, y: 119}
+    - - {x: 90, y: 95}
+      - {x: 87, y: 93}
+      - {x: 87, y: 91}
+      - {x: 89, y: 90}
+    - - {x: -101, y: 94}
+      - {x: -103, y: 91}
+      - {x: -102, y: 91}
+      - {x: -102, y: 92}
+    - - {x: -37, y: 93}
+      - {x: -35, y: 93}
+      - {x: -34, y: 94}
+      - {x: -32, y: 93}
+      - {x: -32, y: 91}
+      - {x: -36, y: 92}
+    - - {x: -25, y: 94}
+      - {x: -28, y: 96}
+      - {x: -26, y: 92}
+      - {x: -25, y: 92}
+    - - {x: 32, y: 92}
+      - {x: 28, y: 92}
+    - - {x: 38, y: 94}
+      - {x: 35, y: 96}
+      - {x: 36, y: 95}
+      - {x: 37, y: 92}
+    - - {x: 50, y: 108}
+      - {x: 53, y: 105}
+      - {x: 56, y: 106}
+      - {x: 56, y: 108}
+      - {x: 53, y: 111}
+      - {x: 51, y: 111}
+    - - {x: 45, y: 112}
+      - {x: 49, y: 110}
+      - {x: 52, y: 112}
+      - {x: 51, y: 115}
+      - {x: 46, y: 117}
+      - {x: 44, y: 115}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rettungsreif_0: -497454973
+      rettungsreif_1: 751727817
+      rettungsreif_2: 1523690903
+      rettungsreif_3: -708288116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

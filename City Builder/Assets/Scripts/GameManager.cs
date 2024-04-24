@@ -34,11 +34,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject land1;
 
-    //треба видалити
-    public CustomCursor customCursor;
-
     //повідомлення про недостатню кількість ресурсів
     public GameObject messageResources;
+
+    public GameObject shop;
 
     //звукове супроводження
     public AudioSource buyBuilding;
@@ -128,9 +127,6 @@ public class GameManager : MonoBehaviour
                     nearestTile.isOccupied = true;
                     grid.SetActive(false);
                     grid2.SetActive(false);
-
-                    customCursor.gameObject.SetActive(false);
-                    Cursor.visible = true;
                 }
             }
             else
@@ -151,9 +147,6 @@ public class GameManager : MonoBehaviour
                     nearestTile.isOccupied = true;
                     grid.SetActive(false);
                     grid2.SetActive(false);
-
-                    customCursor.gameObject.SetActive(false);
-                    Cursor.visible = true;
                 }
             }
         }
@@ -179,8 +172,7 @@ public class GameManager : MonoBehaviour
         {
             purchasedBuildings.Add(building);
             buyBuilding.Play();
-            customCursor.gameObject.SetActive(true);
-            customCursor.GetComponent<SpriteRenderer>().sprite = building.GetComponent<SpriteRenderer>().sprite;
+            
             Cursor.visible = false;
 
             coin -= building.cost;
@@ -193,6 +185,7 @@ public class GameManager : MonoBehaviour
                 grid2.SetActive(true);
 
             buildingPlaced = buildingToPlace;
+            shop.gameObject.SetActive(false);
 
         }
         else

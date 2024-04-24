@@ -8,9 +8,12 @@ public class Quests : MonoBehaviour
 
     public GameObject shopMenuOff;
 
+    public AudioSource openQuests;
+
     public void OpenCloseQuests()
     {
         QuestsMenu.SetActive(!QuestsMenu.activeSelf);
+        openQuests.Play();
 
         shopMenuOff.SetActive(false);
     }

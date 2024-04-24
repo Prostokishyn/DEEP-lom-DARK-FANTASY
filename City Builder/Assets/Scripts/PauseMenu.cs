@@ -18,6 +18,8 @@ public class PauseButton : MonoBehaviour
     public AudioListener music;
     public AudioSource musicSource;
 
+    public AudioSource openMenu;
+
     public Slider AudioSlider;
 
     public Sprite audioOff;
@@ -30,6 +32,7 @@ public class PauseButton : MonoBehaviour
 
     public void Pause()
     {
+
         UserInterface.SetActive(false);
         PauseInterface.SetActive(true);
         QuestsMenu.SetActive(false);

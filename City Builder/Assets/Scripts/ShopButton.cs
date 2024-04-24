@@ -6,14 +6,14 @@ public class ShopButton : MonoBehaviour
 {
     public GameObject shopMenu;
 
+    public GameObject questsMenu;
+
     public AudioSource clickSound;
 
     public void OnMouseDown()
     {
-        if (clickSound != null)
-        {
-            clickSound.Play();
-        }
+        clickSound.Play();
+        questsMenu.SetActive(false);
         shopMenu.SetActive(!shopMenu.activeSelf);
     }
 }

@@ -95,8 +95,8 @@ public class QuestManager : MonoBehaviour
             else
             {
                 // якщо б≥льше немаЇ квест≥в
-                questNameText.text = "Ќема квест≥в";
-                questConditionText.text = "¬и виконали вс≥ квести!";
+                questNameText.text = "Oops...";
+                questConditionText.text = "You have completed all quests";
                 questRewardText.text = "";
                 claimButton.gameObject.SetActive(false);
             }
