@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|d:\\deep-lom-dark-fantasy\\city builder\\assets\\scripts\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|d:\\deep-lom-dark-fantasy\\city builder\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|d:\\deep-lom-dark-fantasy\\city builder\\assets\\scripts\\shopbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shopbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|d:\\deep-lom-dark-fantasy\\city builder\\assets\\scripts\\quests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|d:\\deep-lom-dark-fantasy\\city builder\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|D:\\DEEP-lom-DARK-FANTASY\\City Builder\\assets\\scripts\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|D:\\DEEP-lom-DARK-FANTASY\\City Builder\\assets\\scripts\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|d:\\deep-lom-dark-fantasy\\city builder\\assets\\scripts\\upgradelandbuttontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\upgradelandbuttontest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|D:\\DEEP-lom-DARK-FANTASY\\City Builder\\assets\\scripts\\cheatmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cheatmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|D:\\DEEP-lom-DARK-FANTASY\\City Builder\\assets\\scripts\\quests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|D:\\DEEP-lom-DARK-FANTASY\\City Builder\\assets\\scripts\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\questmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|D:\\DEEP-lom-DARK-FANTASY\\City Builder\\assets\\scripts\\expsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\expsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|D:\\DEEP-lom-DARK-FANTASY\\City Builder\\assets\\scripts\\shopbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shopbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|D:\\DEEP-lom-DARK-FANTASY\\City Builder\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CF6C13C-0FBB-0922-F259-F2127171F749}|Assembly-CSharp.csproj|D:\\DEEP-lom-DARK-FANTASY\\City Builder\\assets\\scripts\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,37 +54,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PauseMenu.cs",
-              "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\PauseMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenu.cs",
-              "ToolTip": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\PauseMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PauseMenu.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBQAAAAgAAAA",
+              "DocumentIndex": 3,
+              "Title": "UpgradeLandButtonTest.cs",
+              "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\UpgradeLandButtonTest.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UpgradeLandButtonTest.cs",
+              "ToolTip": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\UpgradeLandButtonTest.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UpgradeLandButtonTest.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T15:26:17.425Z",
+              "WhenOpened": "2024-05-21T21:25:07.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\Tile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tile.cs",
+              "ToolTip": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\Tile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T17:35:25.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Building.cs",
+              "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\Building.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Building.cs",
+              "ToolTip": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\Building.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Building.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T17:31:57.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheatMenu.cs",
+              "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\CheatMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CheatMenu.cs",
+              "ToolTip": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\CheatMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CheatMenu.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAkwBsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T08:48:20.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PauseMenu.cs",
+              "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\PauseMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenu.cs",
+              "ToolTip": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\PauseMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PauseMenu.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwBQAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T15:26:17.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ShopButton.cs",
               "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\ShopButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ShopButton.cs",
               "ToolTip": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\ShopButton.cs",
               "RelativeToolTip": "Assets\\Scripts\\ShopButton.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAkAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T15:09:04.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-24T15:09:04.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Quests.cs",
               "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\Quests.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quests.cs",
@@ -81,45 +147,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AQIAAJgAAAAAAAAAAAAiwK4AAAAMAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAswFUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T14:28:10.756Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ExpSystem.cs",
               "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\ExpSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ExpSystem.cs",
               "ToolTip": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\ExpSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\ExpSystem.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAowFUAAAALAAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAowEQAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T10:46:40.015Z"
+              "WhenOpened": "2024-04-12T10:46:40.015Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "QuestManager.cs",
               "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\QuestManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\QuestManager.cs",
               "ToolTip": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\QuestManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\QuestManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T10:35:59.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Menu.cs",
               "DocumentMoniker": "D:\\DEEP-lom-DARK-FANTASY\\City Builder\\Assets\\Scripts\\Menu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Menu.cs",

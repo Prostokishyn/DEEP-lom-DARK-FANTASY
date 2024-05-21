@@ -7,7 +7,7 @@ using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
-    //ресурси
+    // ресурси
     public int coin;
     public TextMeshProUGUI coinText;
 
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     public float earningBuildingsInterval = 60.0f;
     public int earningBuildings = 100;
 
-    //придбання та побудова
+    // придбання та побудова
     private Building buildingToPlace;
     public Building buildingPlaced;
 
@@ -34,30 +34,207 @@ public class GameManager : MonoBehaviour
 
     public GameObject land1;
 
-    //повідомлення про недостатню кількість ресурсів
+    // повідомлення про недостатню кількість ресурсів
     public GameObject messageResources;
 
     public GameObject shop;
 
-    //звукове супроводження
+    // звукове супроводження
     public AudioSource buyBuilding;
     public AudioSource placement;
     public AudioSource message;
     public AudioSource energyRecovery;
     public AudioSource earning;
 
-    //рівень
+    // рівень
     public TextMeshProUGUI currentLevel;
     public int lvl;
+
+    public GameObject deleteButton;
+    public GameObject moveButton;
+
+    private Building buildingToMove;
+    private bool isMovingBuilding = false;
 
     private void Start()
     {
         StartCoroutine(ReplenishEnergyRoutine());
-
         StartCoroutine(GenerateBuildingIncome());
+
+        // Встановити кнопки неактивними за замовчуванням
+        deleteButton.SetActive(false);
+        moveButton.SetActive(false);
     }
 
-    //відновлення енергії та дохід з будинків
+    private void Update()
+    {
+        coinText.text = coin.ToString();
+        energyText.text = energy.ToString();
+
+        if (Input.GetMouseButtonDown(0) && buildingToPlace != null)
+        {
+            PlaceBuilding();
+        }
+        else if (Input.GetMouseButtonDown(0) && isMovingBuilding)
+        {
+            MoveBuildingToNewTile();
+        }
+    }
+
+    public void ShowDeleteButton(Building building)
+    {
+        deleteButton.SetActive(!activeSelf); // Показуємо кнопку видалення
+        deleteButton.GetComponent<Button>().onClick.RemoveAllListeners();
+        deleteButton.GetComponent<Button>().onClick.AddListener(() => RemoveBuilding(building));
+    }
+
+    public void ShowMoveButton(Building building)
+    {
+        moveButton.SetActive(true); // Показуємо кнопку переміщення
+        moveButton.GetComponent<Button>().onClick.RemoveAllListeners();
+        moveButton.GetComponent<Button>().onClick.AddListener(() => EnableMoveBuilding(building));
+    }
+
+    private void RemoveBuilding(Building building)
+    {
+        purchasedBuildings.Remove(building);
+
+        Tile occupiedTile = null;
+
+        foreach (Tile tile in tiles)
+        {
+            if (tile.transform.position == building.transform.position)
+            {
+                occupiedTile = tile;
+                break;
+            }
+        }
+
+        if (occupiedTile == null)
+        {
+            foreach (Tile tile in tiles2)
+            {
+                if (tile.transform.position == building.transform.position)
+                {
+                    occupiedTile = tile;
+                    break;
+                }
+            }
+        }
+
+        if (occupiedTile != null)
+        {
+            occupiedTile.isOccupied = false;
+        }
+
+        Destroy(building.gameObject);
+        deleteButton.SetActive(false); // Приховуємо кнопку видалення після видалення будівлі
+        moveButton.SetActive(false); // Приховуємо кнопку переміщення після видалення будівлі
+    }
+
+    private void EnableMoveBuilding(Building building)
+    {
+        buildingToMove = building;
+        isMovingBuilding = true;
+        deleteButton.SetActive(false); // Приховуємо кнопку видалення
+        moveButton.SetActive(false); // Приховуємо кнопку переміщення
+
+        // Активуємо сітку для вибору нової плитки
+        grid.SetActive(true);
+        grid2.SetActive(true);
+    }
+
+    private Tile previousTile;
+
+    private void PlaceBuilding()
+    {
+        Tile nearestTile = GetNearestTile();
+
+        if (nearestTile != null && !nearestTile.isOccupied && buildingToPlace != null)
+        {
+            Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
+            buildingToPlace = null;
+            nearestTile.isOccupied = true;
+
+            // Free up the previously occupied tile if there was one
+            if (previousTile != null && previousTile != nearestTile)
+            {
+                previousTile.isOccupied = false;
+            }
+
+            // Set the current tile as the previous tile
+            previousTile = nearestTile;
+
+            grid.SetActive(false);
+            grid2.SetActive(false);
+        }
+
+        if (nearestTile == null && previousTile != null)
+        {
+            previousTile.isOccupied = false;
+        }
+    }
+
+    private void MoveBuildingToNewTile()
+    {
+        Tile nearestTile = GetNearestTile();
+
+        if (nearestTile != null && !nearestTile.isOccupied && buildingToMove != null)
+        {
+            // Free up the previously occupied tile if there was one
+            if (previousTile != null && previousTile != nearestTile)
+            {
+                previousTile.isOccupied = false;
+            }
+
+            // Move the building to the new tile
+            buildingToMove.transform.position = nearestTile.transform.position;
+            nearestTile.isOccupied = true;
+            previousTile = nearestTile;
+
+            grid.SetActive(false);
+            grid2.SetActive(false);
+            isMovingBuilding = false;
+        }
+    }
+
+    private Tile GetNearestTile()
+    {
+        Tile nearestTile = null;
+        float nearestDistance = float.MaxValue;
+        bool wasLand1Active = land1.activeSelf;
+
+        placement.Play();
+
+        if (wasLand1Active)
+        {
+            foreach (Tile tile in tiles)
+            {
+                float dist = Vector2.Distance(tile.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+                if (dist < nearestDistance)
+                {
+                    nearestDistance = dist;
+                    nearestTile = tile;
+                }
+            }
+        }
+        else
+        {
+            foreach (Tile tile in tiles2)
+            {
+                float dist = Vector2.Distance(tile.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+                if (dist < nearestDistance)
+                {
+                    nearestDistance = dist;
+                    nearestTile = tile;
+                }
+            }
+        }
+
+        return nearestTile;
+    }
+
+    // відновлення енергії та дохід з будинків
     private IEnumerator ReplenishEnergyRoutine()
     {
         while (true)
@@ -87,9 +264,6 @@ public class GameManager : MonoBehaviour
 
     private void GenerateIncomeFromBuildings()
     {
-        //coin = 0;
-
-        // Для кожної купленої будівлі додати її дохід до загального доходу
         foreach (Building building in purchasedBuildings)
         {
             coin += building.income;
@@ -97,62 +271,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        coinText.text = coin.ToString();
-        energyText.text = energy.ToString();
-
-        bool wasLand1Active = land1.activeSelf;
-        if (Input.GetMouseButtonDown(0) && buildingToPlace != null)
-        {
-            placement.Play();
-            Tile nearestTile = null;
-            float nearestDistance = float.MaxValue;
-
-            if (wasLand1Active)
-            {
-                foreach (Tile tile in tiles)
-                {
-                    float dist = Vector2.Distance(tile.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-                    if (dist < nearestDistance)
-                    {
-                        nearestDistance = dist;
-                        nearestTile = tile;
-                    }
-                }
-                if (nearestTile.isOccupied == false)
-                {
-                    Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
-                    buildingToPlace = null;
-                    nearestTile.isOccupied = true;
-                    grid.SetActive(false);
-                    grid2.SetActive(false);
-                }
-            }
-            else
-            {
-                foreach (Tile tile in tiles2)
-                {
-                    float dist = Vector2.Distance(tile.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-                    if (dist < nearestDistance)
-                    {
-                        nearestDistance = dist;
-                        nearestTile = tile;
-                    }
-                }
-                if (nearestTile.isOccupied == false)
-                {
-                    Instantiate(buildingToPlace, nearestTile.transform.position, Quaternion.identity);
-                    buildingToPlace = null;
-                    nearestTile.isOccupied = true;
-                    grid.SetActive(false);
-                    grid2.SetActive(false);
-                }
-            }
-        }
-    }
-
-    //повідомлення про недостатню кількість ресурсів
+    // повідомлення про недостатню кількість ресурсів
     IEnumerator ShowMessage(float seconds)
     {
         messageResources.gameObject.SetActive(true);
@@ -162,8 +281,7 @@ public class GameManager : MonoBehaviour
         messageResources.gameObject.SetActive(false);
     }
 
-    //придбання будівль
-
+    // придбання будівль
     public void BuyBuilding(Building building)
     {
         bool isLand1Active = land1.activeSelf;
@@ -172,7 +290,7 @@ public class GameManager : MonoBehaviour
         {
             purchasedBuildings.Add(building);
             buyBuilding.Play();
-            
+
             Cursor.visible = false;
 
             coin -= building.cost;
@@ -182,11 +300,11 @@ public class GameManager : MonoBehaviour
             if (isLand1Active)
                 grid.SetActive(true);
             else
-                grid2.SetActive(true);
+                grid.SetActive(true);
+            grid2.SetActive(true);
 
             buildingPlaced = buildingToPlace;
             shop.gameObject.SetActive(false);
-
         }
         else
         {

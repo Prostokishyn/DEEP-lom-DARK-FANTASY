@@ -48,23 +48,23 @@ public class ExpSystem : MonoBehaviour
         //    }
         //}
 
-        if (currentLevel == 1)
+        if (currentLevel >= 1)
         {
             level1Reward.GetComponent<Button>().interactable = true;
         }
 
-        if (currentLevel == 2)
+        if (currentLevel >= 2)
         {
             level2Reward.GetComponent<Button>().interactable = true;
         }
 
-        if (currentLevel == 3)
+        if (currentLevel >= 3)
         {
             level3Reward.GetComponent<Button>().interactable = true;
             level3_2Reward.GetComponent<Button>().interactable = true;
         }
 
-        if (currentLevel == 4)
+        if (currentLevel >= 4)
         {
             level4Reward.GetComponent<Button>().interactable = true;
             level4_2Reward.GetComponent<Button>().interactable = true;

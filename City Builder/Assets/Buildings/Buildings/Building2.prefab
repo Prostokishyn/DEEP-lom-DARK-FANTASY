@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2768119634384478320}
   - component: {fileID: 9218010949100156361}
   - component: {fileID: 6141328062887258244}
+  - component: {fileID: 4546002199554130749}
   m_Layer: 0
   m_Name: Building2
   m_TagString: Untagged
@@ -99,5 +100,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cost: 150
   energyCost: 20
-  income: 1000
+  income: 20
   placed: 0
+--- !u!65 &4546002199554130749
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7828648231996542064}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.57, y: 0.59, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
