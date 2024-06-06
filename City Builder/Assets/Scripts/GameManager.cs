@@ -71,6 +71,11 @@ public class GameManager : MonoBehaviour
         coinText.text = coin.ToString();
         energyText.text = energy.ToString();
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            ToggleMenu();
+        }
+
         if (Input.GetMouseButtonDown(0) && buildingToPlace != null)
         {
             PlaceBuilding();
@@ -79,18 +84,40 @@ public class GameManager : MonoBehaviour
         {
             MoveBuildingToNewTile();
         }
+
+        if (Input.touchCount > 0)
+        {
+            isTouchingScreen = true;
+        }
+        else
+        {
+            isTouchingScreen = false;
+        }
     }
 
+    [SerializeField] Animator anim;
+    private bool isMenuOpen = true;
+    private bool isTouchingScreen = false; // Прапорець, що показує, чи є дотик на екрані
+
+    public void ToggleMenu()
+    {
+        // Перевірка, чи не відбувається дотик у певній області екрану, наприклад, у верхній частині (залежить від вашого інтерфейсу)
+        if (!isTouchingScreen && Input.mousePosition.y < Screen.height * 0.3f)
+        {
+            isMenuOpen = !isMenuOpen;
+            anim.SetBool("Buttons animation", isMenuOpen);
+        }
+    }
     public void ShowDeleteButton(Building building)
     {
-        deleteButton.SetActive(!activeSelf); // Показуємо кнопку видалення
+        deleteButton.SetActive(!deleteButton.activeSelf); // Показуємо кнопку видалення
         deleteButton.GetComponent<Button>().onClick.RemoveAllListeners();
         deleteButton.GetComponent<Button>().onClick.AddListener(() => RemoveBuilding(building));
     }
 
     public void ShowMoveButton(Building building)
     {
-        moveButton.SetActive(true); // Показуємо кнопку переміщення
+        moveButton.SetActive(!moveButton.activeSelf); // Показуємо кнопку переміщення
         moveButton.GetComponent<Button>().onClick.RemoveAllListeners();
         moveButton.GetComponent<Button>().onClick.AddListener(() => EnableMoveBuilding(building));
     }
