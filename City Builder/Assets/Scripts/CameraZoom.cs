@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float zoomSpeed = 0.03f; // Швидкість збільшення / зменшення масштабу
-    public float moveSpeed = 0.03f; // Швидкість пересування камери
+    public float zoomSpeed = 0.025f; // Швидкість збільшення / зменшення масштабу
+    public float moveSpeed = 0.025f; // Швидкість пересування камери
 
     public float minZoom = 2f; // Мінімальний масштаб камери
     public float maxZoom = 10f; // Максимальний масштаб камери
@@ -18,8 +18,15 @@ public class CameraController : MonoBehaviour
     private Vector3 touchStart; // Початкова позиція дотику для пересування камери
     private float velocity; // Поточна швидкість зміни масштабу
 
+    public GameObject pauseInterface;
+
     void Update()
     {
+        if (pauseInterface != null && pauseInterface.activeSelf)
+        {
+            return;
+        }
+
         // Перевірка наявності дотиків на екрані
         if (Input.touchCount == 1)
         {

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5477951255857201918}
   - component: {fileID: -2580911976178160368}
   - component: {fileID: -5369892268166462069}
+  - component: {fileID: -3951950917024120404}
   m_Layer: 0
   m_Name: Building8
   m_TagString: Untagged
@@ -102,7 +103,6 @@ MonoBehaviour:
   energyCost: 100
   income: 0
   placed: 0
-  removeBuilding: {fileID: 0}
 --- !u!65 &-5369892268166462069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -124,3 +124,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.93999994, y: 1.32, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!111 &-3951950917024120404
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5579214060346662742}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c327a7083ad864a46b007c08a2833f72, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c327a7083ad864a46b007c08a2833f72, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0

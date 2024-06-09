@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -85,25 +86,32 @@ public class GameManager : MonoBehaviour
             MoveBuildingToNewTile();
         }
 
-        if (Input.touchCount > 0)
-        {
-            isTouchingScreen = true;
-        }
-        else
-        {
-            isTouchingScreen = false;
-        }
+        //if (Input.touchCount > 0)
+        //{
+          //  isTouchingScreen = true;
+        //}
+        //else
+        //{
+         //   isTouchingScreen = false;
+        //}
     }
 
     [SerializeField] Animator anim;
-    private bool isMenuOpen = true;
-    private bool isTouchingScreen = false; // Прапорець, що показує, чи є дотик на екрані
+    [SerializeField] Animator energy_recover;
+    [SerializeField] Animator gold_earn;
+
+    public GameObject menuUi;
+    private bool isMenuOpen = false;
+    public GameObject ClickHereText;
+    //private bool isTouchingScreen = false; // Прапорець, що показує, чи є дотик на екрані
 
     public void ToggleMenu()
     {
-        // Перевірка, чи не відбувається дотик у певній області екрану, наприклад, у верхній частині (залежить від вашого інтерфейсу)
-        if (!isTouchingScreen && Input.mousePosition.y < Screen.height * 0.3f)
+        //Перевірка, чи не відбувається дотик у певній області екрану, наприклад, у верхній частині (залежить від вашого інтерфейсу)
+        if (Input.mousePosition.y < Screen.height * 0.3f)
         {
+            Destroy(ClickHereText);
+            menuUi.SetActive(true);
             isMenuOpen = !isMenuOpen;
             anim.SetBool("Buttons animation", isMenuOpen);
         }
@@ -277,6 +285,7 @@ public class GameManager : MonoBehaviour
         {
             energy = Mathf.Min(100, energy + energyReplenishAmount);
             energyRecovery.Play();
+            energy_recover.SetTrigger("EnergyRecover");
         }
     }
 
@@ -295,6 +304,7 @@ public class GameManager : MonoBehaviour
         {
             coin += building.income;
             earning.Play();
+            gold_earn.SetTrigger("Earn");
         }
     }
 

@@ -10,11 +10,16 @@ public class Quests : MonoBehaviour
 
     public AudioSource openQuests;
 
+    [SerializeField] Animator quests;
+    private bool isQuestsOpen = false;
+
     public void OpenCloseQuests()
     {
-        QuestsMenu.SetActive(!QuestsMenu.activeSelf);
+        QuestsMenu.SetActive(true);
         openQuests.Play();
+        isQuestsOpen = !isQuestsOpen;
+        quests.SetBool("QuestsMenu", isQuestsOpen);
 
-        shopMenuOff.SetActive(false);
+        //shopMenuOff.SetActive(false);
     }
 }

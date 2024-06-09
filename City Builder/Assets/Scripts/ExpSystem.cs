@@ -10,8 +10,6 @@ public class ExpSystem : MonoBehaviour
 {
     public GameObject UpgradeLandButton;
 
-    //public Building[] Buildngs;
-
     [Header("Experience")]
     [SerializeField] AnimationCurve experienceCurve;
 
@@ -24,6 +22,8 @@ public class ExpSystem : MonoBehaviour
     [SerializeField] TextMeshProUGUI levelText;
     [SerializeField] TextMeshProUGUI experienceText;
     [SerializeField] Image experienceFill;
+
+    [SerializeField] Animator levelAnimator;
 
     void Start()
     {
@@ -40,13 +40,13 @@ public class ExpSystem : MonoBehaviour
 
     void Update()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //   if (currentLevel < maxLevel)
-        //    {
-        //        AddExperience(50);
-        //    }
-        //}
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (currentLevel < maxLevel)
+            {
+                AddExperience(50);
+            }
+        }
 
         if (currentLevel >= 1)
         {
@@ -78,6 +78,11 @@ public class ExpSystem : MonoBehaviour
 
     public void AddExperience(int amount)
     {
+        if (currentLevel >= maxLevel)
+        {
+            return;
+        }
+
         totalExperience += amount;
         CheckForLevelUp();
         UpdateInterface();
@@ -85,12 +90,11 @@ public class ExpSystem : MonoBehaviour
 
     public void CheckForLevelUp()
     {
-        if (totalExperience >= nextLevelsExperience)
+        if (totalExperience >= nextLevelsExperience && currentLevel < maxLevel)
         {
             currentLevel++;
             UpdateLevel();
-
-            // Start level up sequence... Possibly vfx?
+            levelAnimator.SetTrigger("LvlUp");
         }
     }
 
@@ -115,7 +119,7 @@ public class ExpSystem : MonoBehaviour
         else
         {
             levelText.text = currentLevel.ToString();
-            experienceFill.fillAmount =1f;
+            experienceFill.fillAmount = 1f;
             experienceText.text = "max";
             UpgradeLandButton.SetActive(true);
         }
