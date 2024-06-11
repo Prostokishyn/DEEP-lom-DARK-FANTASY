@@ -13,10 +13,12 @@ public class ExpSystem : MonoBehaviour
     [Header("Experience")]
     [SerializeField] AnimationCurve experienceCurve;
 
-    public int currentLevel, totalExperience;
+    public int currentLevel=1, totalExperience;
     int previousLevelsExperience, nextLevelsExperience;
 
     int maxLevel = 5;
+
+    public AudioSource level_up;
 
     [Header("Interface")]
     [SerializeField] TextMeshProUGUI levelText;
@@ -40,13 +42,13 @@ public class ExpSystem : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (currentLevel < maxLevel)
-            {
-                AddExperience(50);
-            }
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+          //  if (currentLevel < maxLevel)
+          //  {
+           //     AddExperience(50);
+           // }
+        //}
 
         if (currentLevel >= 1)
         {
@@ -94,6 +96,7 @@ public class ExpSystem : MonoBehaviour
         {
             currentLevel++;
             UpdateLevel();
+            level_up.Play();
             levelAnimator.SetTrigger("LvlUp");
         }
     }

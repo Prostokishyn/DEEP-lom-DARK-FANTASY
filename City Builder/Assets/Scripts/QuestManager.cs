@@ -14,6 +14,7 @@ public class QuestManager : MonoBehaviour
         public int rewardGold;
         public int rewardExp;
         public bool completed;
+        public string requiredBuildingName;
     }
 
     public TextMeshProUGUI questNameText;
@@ -21,18 +22,23 @@ public class QuestManager : MonoBehaviour
     public TextMeshProUGUI questRewardText;
     public Button claimButton;
 
-    private List<Quest> quests;
-    private int currentQuestIndex;
+    public List<Quest> quests;
+    public int currentQuestIndex;
 
     public GameManager gameManager;
     public ExpSystem expSystem;
+
+    public AudioSource Claim;
 
     private void Start()
     {
         quests = new List<Quest>
         {
-            new Quest { name = "Money", condition = "Collect 10 coins", rewardGold = 100, rewardExp = 250 },
-            new Quest { name = "My house", condition = "Buy a first building", rewardGold = 200, rewardExp = 500 }
+            new Quest { name = "My house", condition = "Buy a first building", rewardGold = 200, rewardExp = 50},
+            new Quest { name = "First money", condition = "Collect 300 coins", rewardGold = 100, rewardExp = 100},
+            new Quest { name = "Build", condition = "Buy second buildings", rewardGold = 200, rewardExp = 500},
+            new Quest { name = "Green and white", condition = "Build a house with a green roof", rewardGold = 200, rewardExp = 500, requiredBuildingName = "Building3"},
+            new Quest { name = "There's no limit to the money", condition = "Buy a fifth building", rewardGold = 200, rewardExp = 650, requiredBuildingName = "Building5" }
         };
 
         currentQuestIndex = 0;
@@ -50,14 +56,29 @@ public class QuestManager : MonoBehaviour
     {
         if (currentQuestIndex < quests.Count && !quests[currentQuestIndex].completed)
         {
-            if (currentQuestIndex == 0 && gameManager.coin >= 10)
+            if (currentQuestIndex == 0 && gameManager.buildingPlaced != null )
             {
                 // якщо умова першого квесту виконана, зробити кнопку ≥нтерактивною
                 claimButton.interactable = true;
             }
-            else if (currentQuestIndex == 1 && gameManager.buildingPlaced != null)
+            else if (currentQuestIndex == 1 && gameManager.coin >= 300)
             {
                 // якщо умова другого квесту виконана, зробити кнопку ≥нтерактивною
+                claimButton.interactable = true;
+            }
+            else if (currentQuestIndex == 2 && gameManager.buildingsBought >= 2)
+            {
+                // якщо умова третього квесту виконана, зробити кнопку ≥нтерактивною
+                claimButton.interactable = true;
+            }
+            else if (currentQuestIndex == 3 && gameManager.buildingPlaced != null && gameManager.buildingPlaced.name == quests[currentQuestIndex].requiredBuildingName)
+            {
+                // якщо умова четвертого квесту виконана, зробити кнопку ≥нтерактивною
+                claimButton.interactable = true;
+            }
+            else if (currentQuestIndex == 4 && gameManager.buildingPlaced != null && gameManager.buildingPlaced.name == quests[currentQuestIndex].requiredBuildingName)
+            {
+                // якщо умова четвертого квесту виконана, зробити кнопку ≥нтерактивною
                 claimButton.interactable = true;
             }
             else
@@ -81,11 +102,10 @@ public class QuestManager : MonoBehaviour
     {
         if (currentQuestIndex < quests.Count && !quests[currentQuestIndex].completed)
         {
-            // якщо кнопка натиснута та квест не забраний, отримати нагороду
             gameManager.coin += quests[currentQuestIndex].rewardGold;
             expSystem.totalExperience += quests[currentQuestIndex].rewardExp;
             quests[currentQuestIndex].completed = true; // ѕозначити квест €к вже забраний
-
+            Claim.Play();
             currentQuestIndex++;
 
             if (currentQuestIndex < quests.Count)

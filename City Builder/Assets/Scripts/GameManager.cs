@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     private Building buildingToPlace;
     public Building buildingPlaced;
 
+    public int buildingsBought;
+
     public GameObject grid;
     public GameObject grid2;
 
@@ -39,6 +41,8 @@ public class GameManager : MonoBehaviour
     public GameObject messageResources;
 
     public GameObject shop;
+    public GameObject quests;
+    public GameObject questButton;
 
     // звукове супроводження
     public AudioSource buyBuilding;
@@ -57,8 +61,13 @@ public class GameManager : MonoBehaviour
     private Building buildingToMove;
     private bool isMovingBuilding = false;
 
+    public QuestManager questManager;
+
+    public AudioSource Destroyed;
+
     private void Start()
     {
+        Application.targetFrameRate = 60;
         StartCoroutine(ReplenishEnergyRoutine());
         StartCoroutine(GenerateBuildingIncome());
 
@@ -88,11 +97,11 @@ public class GameManager : MonoBehaviour
 
         //if (Input.touchCount > 0)
         //{
-          //  isTouchingScreen = true;
+        //  isTouchingScreen = true;
         //}
         //else
         //{
-         //   isTouchingScreen = false;
+        //   isTouchingScreen = false;
         //}
     }
 
@@ -163,6 +172,7 @@ public class GameManager : MonoBehaviour
         }
 
         Destroy(building.gameObject);
+        Destroyed.Play();
         deleteButton.SetActive(false); // Приховуємо кнопку видалення після видалення будівлі
         moveButton.SetActive(false); // Приховуємо кнопку переміщення після видалення будівлі
     }
@@ -318,7 +328,6 @@ public class GameManager : MonoBehaviour
         messageResources.gameObject.SetActive(false);
     }
 
-    // придбання будівль
     public void BuyBuilding(Building building)
     {
         bool isLand1Active = land1.activeSelf;
@@ -326,6 +335,7 @@ public class GameManager : MonoBehaviour
         if (canAfford)
         {
             purchasedBuildings.Add(building);
+            buildingsBought++; // Збільшуємо кількість куплених будівель
             buyBuilding.Play();
 
             Cursor.visible = false;
@@ -337,16 +347,31 @@ public class GameManager : MonoBehaviour
             if (isLand1Active)
                 grid.SetActive(true);
             else
-                grid.SetActive(true);
-            grid2.SetActive(true);
+                grid2.SetActive(true);
 
             buildingPlaced = buildingToPlace;
             shop.gameObject.SetActive(false);
+            CheckQuestCompletionOnBuildingPurchase(building); // Передаємо об'єкт будівлі для перевірки квесту
         }
         else
         {
             StartCoroutine(ShowMessage(1f));
             message.Play();
+        }
+    }
+
+    public void CheckQuestCompletionOnBuildingPurchase(Building building)
+    {
+        // Перевіряємо, чи є активний квест, який вимагає цю будівлю
+        if (questManager.currentQuestIndex == 3 && building.name == "Building3")
+        {
+            // Встановлюємо відповідний статус для цього квесту в QuestManager
+            questManager.claimButton.interactable = true;
+        }
+        else if (questManager.currentQuestIndex == 4 && building.name == "Building5")
+        {
+            // Встановлюємо відповідний статус для цього квесту в QuestManager
+            questManager.claimButton.interactable = true;
         }
     }
 }

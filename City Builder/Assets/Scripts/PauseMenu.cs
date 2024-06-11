@@ -32,7 +32,7 @@ public class PauseButton : MonoBehaviour
 
     public void Pause()
     {
-
+        openMenu.Play();
         UserInterface.SetActive(false);
         PauseInterface.SetActive(true);
         QuestsMenu.SetActive(false);
@@ -41,12 +41,14 @@ public class PauseButton : MonoBehaviour
 
     public void BackToTheGame()
     {
+        openMenu.Play();
         UserInterface.SetActive(true);
         PauseInterface.SetActive(false);
     }
 
     public void OpenCloseAudioSettings()
     {
+        openMenu.Play();
         PauseInterface.SetActive(!PauseInterface.activeSelf);
         Settings.SetActive(!Settings.activeSelf);
     }
@@ -67,6 +69,7 @@ public class PauseButton : MonoBehaviour
 
     public void ExitOnMenu()
     {
+        openMenu.Play();
         SceneManager.LoadScene(0);
     }
 }
